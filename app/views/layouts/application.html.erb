@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Igire</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- <link href="//fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
+  </head>
+
+  <body>
+    <%= yield %>
+    <!-- footer -->
+    <div class="footer">
+    	<div class="container">
+    		<div class="col-md-4 footer-grids">
+    			<h3>Review</h3>
+    			<p>Sed ut turpis elit ullamcorper in auctor non, accumsan vel lacus nulla auctor cursus nunc. Maecenas ultricies dolor in urna tempus, id egestas erat finibus  interdum lectus eget scelerisque.</p>
+    		</div>
+    		<div class="col-md-3 footer-grids">
+    			<h3>Contact Us</h3>
+    			<p>000 Kigali City Rwanda.<br>
+    				<span>Phone: 07800000</span>
+    			</p>
+    			<div class="footer-bottom">
+    				<a href="#"><i class="fa fa-facebook"> </i><span>Facebook</span></a>
+    				<a href="#"><i class="fa fa-twitter"> </i><span>Twitter</span></a>
+    				<a href="#"><i class="fa fa-google-plus"> </i><span>Google +</span></a>
+    				<a href="#"><i class="fa fa-dribbble"> </i><span>Dribbble</span></a>
+    			</div>
+    		</div>
+    		<div class="col-md-5 footer-grids">
+    			<h3>Flickr</h3>
+    			<a  class="footer-img" href=""><img src="images/i4.jpg" alt=""></a>
+    			<a class="footer-img" href=""><img src="images/i2.jpg" alt=""></a>
+    			<a class="footer-img" href=""><img src="images/i3.jpg" alt=""></a>
+    		</div>
+    		<div class="clearfix"> </div>
+    		<div class="footer-copy">
+    			<p>© 2017 IGIRE. All rights reserved | Design by <a href="#">Nexpals ltd</a></p>
+    		</div>
+    	</div>
+    </div>
+    <!-- //footer --> 
+  </body>
+</html>
