@@ -44,7 +44,7 @@ body a:hover{
 }
 /*-- banner --*/ 
 .banner{ 
-	background:url('http://res.cloudinary.com/nexpals/image/upload/v1511946612/banner_qqeoox.jpg')no-repeat center bottom;
+	background:url('https://farm5.staticflickr.com/4585/37836198575_a6d79ce965_c.jpg')no-repeat center bottom;
 	-webkit-background-size:cover; 
 	-moz-background-size:cover; 
 	-o-background-size:cover;
@@ -106,7 +106,7 @@ body a:hover{
 .menu {
     display: inline-block;
     box-sizing: border-box;
-    background: #4362ca;
+    background: #446600;
 	overflow: hidden;
     height: 50px;
     width: 55px;
@@ -147,7 +147,7 @@ body a:hover{
 .menu ul.dropdown-menu {
     min-width: inherit;
     top: 143%;
-    background-color: #4362ca;
+    background-color: #446600;
 }
 .w3nav.show-w3nav {
     opacity: 1;
@@ -207,7 +207,7 @@ body a:hover{
 	transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
 } 
 .w3nav.show-w3nav li a:hover,.w3nav.show-w3nav li a.active{
-    color: #09e3ff;
+    color: #003366;
     background-color: transparent;
 } 
 .toggle {
@@ -304,7 +304,7 @@ p {
     margin-top: 2em;
 }
 .welcome-w3lleft h3{
-    color: #05c0d8;
+    color: #003366; 
     font-size: 3em;
     font-weight: 700;
     margin-bottom: 0.5em;
@@ -331,7 +331,7 @@ p {
     -o-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-    background: #4362ca;
+    background: #446600;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -359,7 +359,7 @@ p {
 	-o-border-radius: 50%;
 	-ms-border-radius: 50%;
 	border-radius: 50%;
-	background: #05c0d8;
+	background: #003366;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -398,8 +398,8 @@ p {
 }
 /*-- read more Button --*/
 .w3layouts-more {
-    border: 1px solid #4362ca;
-    color: #4362ca;
+    border: 1px solid #446600;
+    color: #446600;
     font-size: 1em;
     padding: 0.7em 1.9em;
     display: inline-block;
@@ -425,7 +425,7 @@ p {
 	height: 103%;
 	top: 50%;
 	left: 50%;
-	background: #05c0d8;	
+	background: #003366;	
 	opacity: 0;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
@@ -436,7 +436,7 @@ p {
 .w3layouts-more:hover,
 .w3layouts-more:active {
 	color: #fff;
-	border-color:#05c0d8;
+	border-color:#003366;
 } 
 .w3layouts-more:hover:after,.w3layouts-more:active:after{
 	width: 100%;
@@ -446,7 +446,7 @@ p {
 /*-- //welcome --*/
 /*-- trips --*/
 .trips{
-	background:url('http://res.cloudinary.com/nexpals/image/upload/v1511946612/banner_qqeoox.jpg')no-repeat center bottom fixed;
+	background:url('https://farm5.staticflickr.com/4585/37836198575_a6d79ce965_c.jpg')no-repeat center bottom fixed;
 	-webkit-background-size:cover; 
 	-moz-background-size:cover; 
 	-o-background-size:cover;
@@ -457,7 +457,7 @@ p {
     overflow: hidden;
 }
 .trip-agileitsimg{
-	background:url('http://res.cloudinary.com/nexpals/image/upload/v1511948418/img1_lsx9n3.jpg')no-repeat center 0px;
+	background:url('https://farm5.staticflickr.com/4547/38668198346_918f93fb19_b.jpg')no-repeat center 0px;
 	background-size:cover; 
 	min-height:414px;
 	-webkit-transition:.5s all;
@@ -505,7 +505,7 @@ p {
 /*-- //trips --*/
 /*-- news --*/
 h3.w3agileits-title{
-    color: #05c0d8;
+    color: #003366;
     font-size: 3em;
     font-weight: 700; 
     text-transform: capitalize;
@@ -590,7 +590,7 @@ h3.w3agileits-title{
 }
 .news-w3text h6 {
     font-size: .9em;
-    color: #05c0d8;
+    color: #003366;
     margin: 1em 0 .5em;
     font-weight: 400;
 }
@@ -611,7 +611,7 @@ h3.w3agileits-title{
 }
 .footer h3 {
     font-size: 2.5em;
-    color: #4362ca;
+    color: #446600;
     margin-bottom: 0.5em;
     font-family: 'Dancing Script', cursive;
 }
@@ -632,7 +632,7 @@ h3.w3agileits-title{
 }
 /* Icons */
 .footer-bottom a {
-    color: #05c0d8;
+    color: #446600;
     background: #ffffff;
     border-radius: 2px;
     text-align: center;
@@ -651,7 +651,7 @@ h3.w3agileits-title{
     line-height: 2.3em;
 }
 .footer-bottom a:hover {
-    background: #05c0d8;
+    background: #003366;
     color: #fff;
 }
 /* pop-up text */
@@ -664,7 +664,7 @@ h3.w3agileits-title{
     padding: 5px;
     font-size: 1em;
     border-radius: 2px;
-    background: #05c0d8;
+    background: #003366;
     visibility: hidden;
     opacity: 0;
     -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -681,7 +681,7 @@ h3.w3agileits-title{
   height: 0; 
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #05c0d8;
+  border-top: 5px solid #003366;
   position:absolute;
   bottom:-5px;
   left:36px;
@@ -723,13 +723,13 @@ h3.w3agileits-title{
     text-align: center;
 }
 .footer-copy p a {
-    color: #05c0d8;
+    color: #446600;
 }
 .footer-copy p a:hover{
-    color: #fff;
+    color: #e6e600;
 }
 .footer-copy:hover{
-    border-color: #05c0d8;
+    border-color: #446600;
 }
 /*--//footer--*/
 /*-- slider-up-arrow --*/
@@ -766,7 +766,7 @@ h3.w3agileits-title{
 }
 .w3about .banner-w3lstext h2{
     font-size: 4em;
-    color: #05c0d8; 
+    color: #003366; 
 }
 .about h5 {
     font-size: 1.5em;
@@ -811,7 +811,7 @@ h3.w3agileits-title{
 	text-decoration: none;
 }
 .about .bs-example-tabs ul.nav-tabs li a:hover,.about .bs-example-tabs ul.nav-tabs li.active a {
-    color: #05c0d8; 
+    color: #003366; 
 }
 .about .tabcontent-grids ul li {
     display: block;
@@ -821,7 +821,7 @@ h3.w3agileits-title{
 }
 .about .tabcontent-grids ul li  i.fa {
     margin-right: 0.5em;
-    color: #4362ca;
+    color: #446600;
 }  
 /*-- progress-bars --*/
 .services {
@@ -860,7 +860,7 @@ h3.w3agileits-title{
 	-webkit-border-radius: 2px; 
 	-moz-border-radius: 2px;
 	border-radius: 2px;
-	background: #4362ca;
+	background: #446600;
 	margin-bottom: 2em;
 	-webkit-transition: width 1s;
 	transition: width 1s;
@@ -945,8 +945,8 @@ h3.w3agileits-title{
   float: left;
 }
 .view-caption .w3ls-info h4 {
-    color: #4362ca;
-    font-size: 1.5em;
+    color: #446600;
+    font-size: 0.9em;
     font-weight: 400;
 }
 .view-caption .w3ls-info p {
@@ -963,7 +963,7 @@ h3.w3agileits-title{
 .view-caption ul li a {
     background-color: #fff;
     border-radius: 50%;
-    color: #17b9ea;
+    color: #446600;
     display: inline-block;
     margin: 0 2px;
     height: 28px;
@@ -1108,7 +1108,7 @@ h3.w3agileits-title{
     text-align: left;
     font-size: 2em;
     font-weight: 300;
-    color: #05c0d8;
+    color: #003366;
 }
 .contact-form input[type="text"] {
     width: 36%;
@@ -1145,14 +1145,14 @@ h3.w3agileits-title{
 	display: block;
 }
 .contact-form input[type="submit"] {
-    border: 1px solid #4362ca;
+    border: 1px solid #446600;
     outline: none;
     color: #fff;
     padding: .6em 3.8em;
     font-size: 1em;
     margin: 1em 0 0 0;
     -webkit-appearance: none;
-    background: #4362ca;
+    background: #446600;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -1166,13 +1166,13 @@ h3.w3agileits-title{
 }
 .contact-form input[type="submit"]:hover {
   background: none;
-  color: #4362ca;
+  color: #446600;
 } 
 .cnt-address p span {
     display: block;
 }
 .cnt-address p a {
-    color: #4362ca;
+    color: #446600;
 }
 .cnt-address p a:hover{
     color: #999;
@@ -1468,7 +1468,7 @@ h2.typoh2{
 }
 h3.icon-subheading {
 	font-size: 28px;
-    color: #4362ca !important;
+    color: #446600 !important;
     margin: 30px 0 15px;
 }
 h3.agileits-icons-title {
@@ -1732,7 +1732,7 @@ h2.typoh2{
 /*-- input-effect --*/
 .styled-input input:focus ~ label, .styled-input input:valid ~ label {
     font-size: 1.1em;
-    color: #05c0d8;
+    color: #003366;
     top: -1.3em;
     -webkit-transition: all 0.125s ease;
 	-moz-transition: all 0.125s ease; 
@@ -1762,7 +1762,7 @@ h2.typoh2{
 	display: block;
 	width: 0;
 	height:2px;
-	background:#05c0d8;
+	background:#003366;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -1785,7 +1785,7 @@ h2.typoh2{
     text-align: center;
 }
 .login-form p a {
-    color: #05c0d8;
+    color: #003366;
     margin-left: 5px;
 	-webkit-transition:.5s all;
 	-moz-transition:.5s all;
@@ -1813,7 +1813,7 @@ h2.typoh2{
 .wthree-text input[type="checkbox"]+label span:first-child {
     width: 16px;
     height: 16px;
-    border: 2px solid #05c0d8;
+    border: 2px solid #003366;
     position: absolute;
     left: 0;
     top: 1px;
@@ -1844,11 +1844,11 @@ h2.typoh2{
     color: #555;
 }
 .wthree-text ul li a:hover{
-    color: #4362ca;
+    color: #446600;
 }
 .login-form input[type="submit"] {
     text-transform: capitalize;
-    background: #4362ca;
+    background: #446600;
     color: #FFFFFF;
     padding: .7em 2em;
     border: none;
@@ -1862,7 +1862,7 @@ h2.typoh2{
     -webkit-appearance: none;
 }
 .login-form input[type="submit"]:hover {
-    background: #05c0d8;
+    background: #003366;
 }
 .login-form.signup-form label {
     text-align: left;
@@ -1882,7 +1882,7 @@ h2.typoh2{
     font-size: 2em;
     margin-bottom: 0.4em;
     font-family: 'Dancing Script', cursive;
-    color: #05c0d8;
+    color: #003366;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
@@ -1892,7 +1892,7 @@ h2.typoh2{
     padding: 0.5em 2em 0;
 }
 .bnr-modal button.close {
-    color: #4362ca;
+    color: #446600;
     opacity: .9;
     font-size: 2.5em;
 	outline:none;
@@ -2549,3 +2549,10 @@ h3.w3agileits-title {
 /*-- //responsive-design --*/
 
 
+.project-img img {
+    height: 130px;
+    width: 130px;
+}
+.objectives p {
+    display: none;
+}
