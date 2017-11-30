@@ -12,10 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.turbolinks
 //= require bootstrap-sprockets
 //= require owl.carousel
-//= require jquery.desoslide
 //= require jquery.flexslider
+//= require jquery.desoslide
 //= require turbolinks
-//= require jquery.turbolinks
 //= require_tree .
