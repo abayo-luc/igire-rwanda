@@ -705,6 +705,8 @@ h3.w3agileits-title{
 	-o-transition:.5s all;
 	-ms-transition:.5s all;
 	transition:.5s all;
+    width: 100px;
+    height: 100px;
 }
 .footer img:hover {
     border-color: #19c5db;
@@ -2553,6 +2555,76 @@ h3.w3agileits-title {
     height: 130px;
     width: 130px;
 }
+
+
+
+/*header social media icon*/
+.header-icon li a {
+    color: #fff;
+    background: #446600;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    width: 32px;
+    height: 32px;
+}
+
+.header-icon li a span {
+    color: blue;
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    right: -25px;
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 2px;
+    background: #003366;
+    visibility: hidden;
+    opacity: 0;
+    -o-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.header-icon li a i.fa {
+    display: inline-block;
+    line-height: 2.3em;
+}
+.header-icon li a:hover {
+    background: #003366;
+    color: #fff;
+}
+
+
+.header-icon li a span:before {
+  content:'';
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #003366;
+  position:absolute;
+  bottom: 35px;
+  left:36px;
+}
+.header-icon li a:hover span {
+    bottom: -45px;
+    visibility: visible;
+    opacity: 1;
+    color: #fff;
+}
+
 .objectives p {
     display: none;
+}
+
+.service-box:hover .objectives p {
+    display: block;
 }
