@@ -2,3 +2,4 @@
 if(sd>settings.min)
 $(containerIDhash).fadeIn(settings.inDelay);else
 $(containerIDhash).fadeOut(settings.Outdelay);});};})(jQuery);
+
