@@ -578,3 +578,18 @@ The team*/
          margin-top: 3rem;
      }
 }
+
+
+
+.team-agile-img a img {
+    height: 250px;
+}
+
+#myTab .active  {
+    background-color: #446600;
+}
+#myTab .active a {
+    color: #fff;
+    font-weight: bold;
+    background-color: #446600;
+}
