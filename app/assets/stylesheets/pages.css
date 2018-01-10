@@ -705,6 +705,7 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
   text-align: center;
 }
 
+
 .myWrap a {
   -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
