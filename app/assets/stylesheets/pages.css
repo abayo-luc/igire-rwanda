@@ -834,3 +834,6 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
     transform: scale(1);
 }
 
+.project-descr {
+    display: none;
+}

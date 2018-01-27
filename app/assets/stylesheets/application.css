@@ -826,10 +826,15 @@ h3.w3agileits-title{
     color: #446600;
 }  
 /*-- progress-bars --*/
-.services {
+.the-project {
     background: url('https://farm5.staticflickr.com/4585/37836198575_a6d79ce965_c.jpg')no-repeat center 0px fixed;
     background-size: cover;
 }
+.services {
+    background-color: rgb(0,0,0,0.5);
+    background-size: cover;
+}
+
 .b_label {
     color: #fff;
     margin-bottom: 6px;
