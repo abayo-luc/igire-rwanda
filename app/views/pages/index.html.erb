@@ -1,318 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-<body> 
+<body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0" style>
 	<!-- banner -->
-	<div class="banner">
-		<!-- header -->
-		<div class="header">
-			<div class="container">
-				<div class="header-w3lsrow"> 
-					<div class="menu"> 
-						<div class="toggle"></div> 
-						<ul class="w3nav">
-							<li><a href="index.html" class="active"> Home</a></li>
-							<li><a href="about.html"> About</a></li> 
-							<li><a href="gallery.html"> Gallery</a></li>
-							<li><a href="contact.html"> Contact Us</a></li>
-							<li><a href="team.html">Our Team</a></li>
-						</ul>
-						<div class="clearfix"> </div>
-					</div> 
-					<div class="logo">
-						<h1><a href="index.html">IGIRE</a></h1>
-					</div>  
-					<div class="header-right">   
-						<ul class="hidden-xs header-icon">
-							<li><a href="https://web.facebook.com/igirerwandaorganization/" target="_blank"><i class="fa fa-facebook"> </i><span>Facebook</span></a></li>
-							<li><a href="https://twitter.com/igirerwandaorg" target="_blank"><i class="fa fa-twitter"> </i><span>Twitter</span></a></li>
-							<li><a href="#" target="_blank"><i class="fa fa-linkedin"> </i><span>LinkedIn</span></a></li>
-						</ul>
-						<div class="clearfix"> </div> 
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-		<!-- //header --> 
-		<!-- banner-text -->
-		<div class="banner-text"> 
-			<div class="container">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<div class="banner-w3lstext">
-								<h2>Welcome to IRO</h2>
-								<p>Kigali, Rwanda</p>
+
+	<header>
+		<!-- navigation -->
+		<div class="main-top py-1 aos-init aos-animate" data-aos="fade-down">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid">
+					<!-- logo -->
+					<%= link_to image_tag("/assets/igire.png",  alt: "igire", class: "img-fluid", id: "logo"), index_path, class: "navbar-brand font-weight-bold" %>
+					<!-- //logo -->
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse text-center collapse" id="navbarSupportedContent" style="">
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item active">
+							<%= link_to "Home", index_path, class: "nav-link text-uppercase"%>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								About Us
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
+								<%= link_to "Our Organization", about_path, class: "dropdown-item text-uppercase list-group-item"  %>
+								<%= link_to "Our Team", team_path, class: "dropdown-item text-uppercase list-group-item"  %>
 							</div>
 						</li>
-						<li>
-							<div class="banner-w3lstext">
-								<h3>Mission</h3>
-								<p>The mission of Igire Rwanda Organization is to assist youth to amass knowledge and skills that lead to their self-reliance and enable them to create opportunities for other youth</p>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Programs
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
+								<%= link_to "SheCanCode", shecancode_path, class: "dropdown-item text-uppercase list-group-item"  %>
+								<a class="dropdown-item text-uppercase list-group-item" href="#stats">Girls in ICT</a>
+								<a class="dropdown-item text-uppercase  list-group-item" href="#">Kufandisha Rwanda Fellowship</a>
 							</div>
 						</li>
-						<li>
-							<div class="banner-w3lstext">
-								<h3>Vision</h3>
-								<p>
-								To target and work with youth in their communities across the continent to empower them to create their own individual, dynamic life plans and supporting them in achieving their goals through the improving access to knowledge, information, and basic skills.</p>
-							</div>
+						<li class="nav-item">
+							<%= link_to "Contact Us", contact_path, class: "nav-link text-uppercase"  %>
 						</li>
-					</ul> 
-				</div> 	
-				<!-- FlexSlider --> 
-				<script type="text/javascript">
-					$(window).load(function(){
-					  $('.flexslider').flexslider({
-						animation: "slide",
-						start: function(slider){
-						  $('body').removeClass('loading');
-						}
-					  });
-					});
-				</script>
-				<!-- End-slider-script -->
-			</div>
-		</div>
-		<!-- //banner-text --> 
-	</div>
-	<!-- //banner -->
-	<!-- welcome -->
-	<div class="welcome"> 
-		<div class="container">
-			<div class="col-md-7 welcome-w3lleft">
-				<h3 class="text-center">Igire Rwanda Organization</h3>
-				<h4 class="text-center">(IRO)</h4>
-				<p>
-				Igire Rwanda organization (IRO) is a non-government organization which has been founded by Innocent Mbanda and co-founder Jean-Jacques Iradukunda. Organization started in May 2016, as small group of young people interested in standing up to help other youth to work. Their goal was to encourage youth to stop questioning asking and looking for jobs instead use skills, talents and opportunities they have to create their own jobs. This small group of youth started by providing training to youth who have a small business in order to help them with skills to manage their business. The founder member was worried about the youth business which falls under loss at starting stage as they invested their small amount of their life savings. They started training and mentoring youth who did not have to school but have business with business skills. 
-				</p>  
-				<a href="#" class="w3layouts-more" data-toggle="modal" data-target="#myModal">Read More</a>
-			</div>  
-			<div class="col-md-5 welcome-w3lright">
-				<div class="welcome-grids">
-					<div class="service-box">
-						<div class="agileits-wicon">
-							<i class="fa fa-hand-rock-o" aria-hidden="true"></i>
-						</div>
-						<h5>Empowerment</h5> 
-						<small class="objectives"><p>We believe that every single individual in society needs empowerment. We create opportunities for the empowerment and full realisation of young people potential</p></small>
-					</div> 
-					<div class="clearfix"> </div>
-				</div>
-				<div class="welcome-grids">
-					<div class="col-md-6 col-sm-6 col-xs-6 service-box">
-						<div class="agileits-wicon">
-							<i class="fa fa-laptop" aria-hidden="true"></i>
-						</div>
-						<h5>Innovation</h5> 
-						<small class="objectives"><p>We strive to turn ideas into reality. We turn the walls an opportunity for young people to find solutions for their problems.</p></small>
-					</div>
-					<div class="col-md-6 col-sm-6 col-xs-6 service-box">
-						<div class="agileits-wicon">
-							<i class="fa fa-users" aria-hidden="true"></i>
-						</div>
-						<h5>Youth Leadership</h5> 
-						<small class="objectives"><p>We value youth leadership in project design and implementation. We believe youth are leaders of today and tomorrow</p></small>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div> 
-			<div class="clearfix"> </div>
-		</div> 
-	</div>
-	<!-- //welcome -->
-	<!-- modal-about -->
-	<div class="modal bnr-modal fade" id="myModal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-				</div> 
-				<div class="modal-body modal-spa">
-					<h4>Igire Rwanda Organization (IRO)</h4>
-					<p style="color: #000;">
-				 	Igire Rwanda organization (IRO) is a non-government organization which has been founded by Innocent Mbanda and co-founder Jean-Jacques Iradukunda. Organization started in May 2016, as small group of young people interested in standing up to help other youth to work. Their goal was to encourage youth to stop questioning asking and looking for jobs instead use skills, talents and opportunities they have to create their own jobs. This small group of youth started by providing training to youth who have a small business in order to help them with skills to manage their business. The founder member was worried about the youth business which falls under loss at starting stage as they invested their small amount of their life savings. They started training and mentoring youth who did not have to school but have business with business skills. 
-				 	<br><br>
-				 	August 15 2016, Innocent the Founder and Jean Jacques the Co-founder organized another team of youth who are a delight for the social and economic development of youth to come and work together. They started agreed to start an organization with the mission to assist youth to amass knowledge and skills that lead to their self-reliance and enable them to create opportunities for other youth. 
-				 	<br><br>
-				 	Igire Rwanda Organization envisages a Rwandan society where youth can live a fulfilled life, and walk in the fullness of their potential. 
-				 	<br><br>
-				 	<b>Empowerment:</b> We believe that every single individual in society needs empowerment. We create opportunities for the empowerment and full realisation of young people potential. IRO believes everyone in the community needs employment and it’s our jobs to creating an environment where everyone has an opportunity to create his/her own employment and full realisation of discovering his/her potential career. 
-				 	<br><br>
-				 	<b>Innovation:</b> We strive to turn ideas into reality. We turn the walls an opportunity for young people to find solutions for their problems. 
-				 	<br><br>
-				 	<b>Partnership:</b> We welcome everyone who cares and believes youth are the catalyst of social and economic development of our imminent 
-				 	<br><br>
-				 	<b>Youth Leadership:</b> We value youth leadership in project design and implementation. We believe youth are leaders of today and tomorrow.
-					</p>
-				</div> 
-			</div>
-		</div>
-	</div>
-	<!-- //modal-about -->  
-	<!-- trips -->
-	<div class="trips"> 
-		<div class="container">
-			<div class="trips-agileinfo"> 
-				<div class="col-md-6 trip-agileitsimg">  
-					
-				</div> 
-				<div class="col-md-6 trip-agileitstext welcome-w3lleft"> 
-					<h3>IRO Projects</h3>
-					<h5>Girls in ICT</h5>
-					<p>
-					Girls in ICT Project- Girls in ICT project is a project which is designed to help young girls who have dropped out the school due to different problems such as pregnancy, family problems and poverty gain access to the quality education which will help them to be job creators 	
-					</p> 
-					<div id="owl-demo" class="owl-carousel owl-theme">
-						<div class="item agile-item project-img">
-							<img src="https://farm5.staticflickr.com/4529/37836197515_51cddd15a9_b.jpg" class="trip-w3img" alt=""/>  
-						</div> 
-						<div class="item agile-item project-img">
-							<img src="https://farm5.staticflickr.com/4582/38668188776_33a90f146a_b.jpg" class="trip-w3img" alt=""/>  
-						</div> 
-						<div class="item agile-item project-img">
-							<img src="https://farm5.staticflickr.com/4564/38668189316_c17742ee25_b.jpg" class="trip-w3img" alt=""/>  
-						</div>
-						<div class="item agile-item project-img">
-							<img src="https://farm5.staticflickr.com/4530/38691556182_b7affa993f_b.jpg" class="trip-w3img" alt=""/>  
-						</div>
-						<div class="item agile-item project-img">
-							<img src="https://farm5.staticflickr.com/4546/37836194745_9eb0e8d21f_b.jpg" class="trip-w3img" alt=""/>  
-						</div>
-						<div class="item agile-item project-img">
-							<img src="https://farm5.staticflickr.com/4547/38668196006_75a6c97cf7_b.jpg" class="trip-w3img" alt=""/>  
-						</div> 
-						<div class="item agile-item project-img">
-							<img src="https://farm5.staticflickr.com/4582/37836192905_bfd81835ed_b.jpg" class="trip-w3img" alt=""/>  
-						</div>
-						<div class="item agile-item project-img">
-							<img src="https://farm5.staticflickr.com/4569/37836195625_773ce16678_b.jpg" class="trip-w3img" alt=""/>  
-						</div> 
-						<div class="item agile-item project-img">
-							<img src="https://farm5.staticflickr.com/4524/38668186246_715b485766_b.jpg" class="trip-w3img" alt=""/>  
-						</div> 
-						<div class="item agile-item project-img">
-							<img src="https://farm5.staticflickr.com/4518/38691556902_37c26f4baf_b.jpg" class="trip-w3img" alt=""/>  
-						</div>
-					</div> 
-					<script>
-						$(document).ready(function() { 
-							$("#owl-demo").owlCarousel({ 
-							  autoPlay: 3000, //Set AutoPlay to 3 seconds
-						 
-							  items : 3,
-							  itemsDesktop : [768,3],
-							  itemsDesktopSmall : [414,4]
-						 
-							});
-						 
-						}); 
-					</script>  	
-				</div> 
-				<div class="clearfix"> </div>
-			</div>  
-		</div> 
-	</div>
-	<!-- //trips -->
-	<!-- news -->
-	<div class="news"> 
-		<div class="container">
-			<h3 class="w3agileits-title">SheCanCode Program</h3>
-			<%= render "news" %>
-			<!-- <div class="new-agileinfo">
-				<div class="col-md-4 news-left">
-					<ul id="demo1_thumbs" class="list-inline"> 
-						<li><a href="images/img2.jpg"><img src="images/i1.jpg" alt="" data-desoslide-caption="<h3>Maecenas aliqua</h3> <br>Eligendi optio nam libero tempore cum soluta nobis est cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus">
-							<div class="news-w3text">
-								<h4>Maecenas aliqua</h4>
-								<h6><i class="fa fa-calendar" aria-hidden="true"></i> 05 / 09 / 2016</h6>	
-								<p>Integer viverra eleifend neque, duis vulputate tempus laoreet. </p>
-							</div> 
-						</a></li>
-						<li><a href="images/img1.jpg"><img src="images/i1.jpg" alt="" data-desoslide-caption="<h3>Facere possimus </h3> <br>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus">
-							<div class="news-w3text">
-								<h4>Facere possimus</h4>
-								<h6><i class="fa fa-calendar" aria-hidden="true"></i> 05 / 09 / 2016</h6>	
-								<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>
-							</div>   
-						</a></li>
-						<li><a href="images/img3.jpg"><img src="images/i3.jpg" alt="" data-desoslide-caption="<h3>Nulla molestie</h3> <br>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus">
-							<div class="news-w3text">
-								<h4>Nulla molestie</h4>
-								<h6><i class="fa fa-calendar" aria-hidden="true"></i> 05 / 09 / 2016</h6>	
-								<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>
-							</div> 
-						</a></li>
-						<li><a href="images/img4.jpg"><img src="images/i4.jpg" alt="" data-desoslide-caption="<h3>Duis accumsan</h3> <br>Eligendi optio nam libero tempore cum soluta nobis est cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus">
-							<div class="news-w3text">
-								<h4>Duis accumsan</h4>
-								<h6><i class="fa fa-calendar" aria-hidden="true"></i> 05 / 09 / 2016</h6>	
-								<p>Integer viverra eleifend neque, duis vulputate tempus laoreet. </p>
-							</div> 
-						</a></li> 
+						<li class="nav-item ml-lg-5 mt-lg-0 mt-sm-5 mt-4">
+							<a href="#" class="reqe-button text-uppercase">Donate</a>
+						</li>
 					</ul>
 				</div>
-				<div id="demo1_main_image" class="col-md-8  news-right">
-					
+			</nav>
+		</div>
+		<!-- //navigation -->
+	</header>
+	<div class="banner">
+		<div class="main-w3pvt">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6 banner-img aos-init aos-animate" data-aos="fade-right">
+						<div class="effect-w3">
+							<img src="images/img.jpg" alt="" class="img-fluid image1">
+							<img src="images/img.jpg" alt="" class="img-fluid image2">
+							<img src="images/img.jpg" alt="" class="img-fluid image3">
+							<img src="images/img.jpg" alt="" class="img-fluid image4">
+						</div>
+					</div>
+					<!-- <div class="col-lg-6 style-banner aos-init aos-animate" data-aos="zoom-in-left">
+					<h1 class="text-white font-weight-bold">Igire Rwanda Organization</h1>
+					<p class="mt-sm-4 mt-4 text-light">IRO is an NGO founded by Innocent Mbanda and co-founder Jean-Jacques Iradukunda in May 2016. IRO began as small group of young people interested in working togehter to empower their peers. Their goal was to encourage youth to use their skills and talents to find, or create opportunities.</p>
+					<a href="about.html" class="btn button-style mt-sm-5 mt-4 scroll">Read More</a>
 				</div> -->
-			</div>    
-		 
-			<script>
-			$('#demo1_thumbs').desoSlide({
-				main: {
-					container: '#demo1_main_image',
-					cssClass: 'img-responsive'
-				},
-				 effect: 'sideFade',
-				caption: true
-			});
-			</script> 
+				<ul class="bg-bubbles">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	<!-- //news --> 
-	
-	<!-- menu js -->
-	<script>
-		$('.toggle').on('click', function() {
-			$('.menu').toggleClass('open');  
-			$('.w3nav').toggleClass('show-w3nav');  
-			$('.w3nav a').toggleClass('show-w3nav-link');  
-			$('.toggle').toggleClass('close');
-			$('.header-icon').toggle(800);  
-		});
-	</script>
-	<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-			
+</div>
+
+
+<!-- //banner -->
+
+<!-- about -->
+<div class="about py-5" id="about">
+	<div class="container py-xl-5 py-lg-3">
+		<h3 class="tittle text-center text-dark font-weight-bold">Igire Rwanda Organization (IRO)</h3>
+		<div class="row mb-lg-4">
+			<p class="sub-tittle text-center mt-3 mb-sm-5 mb-4">IRO is an NGO founded by Innocent Mbanda and co-founder Jean-Jacques Iradukunda in May 2016. IRO began as small group of young people interested in working togehter to empower their peers. Their goal was to encourage youth to use their skills and talents to find, or create opportunities.</p>
+		</div>
+		<div class="row text-center">
+			<%= link_to "Read More", about_path, class: "read-more btn button-style mt-sm-5 mt-4"%>
+		</div>
+	</div>
+</div>
+<section class="banner-bottom-w3layouts py-5" id="services">
+	<div class="container py-xl-5 py-lg-3">
+		<div class="row pt-lg-4 aos-init aos-animate" data-aos="zoom-in">
+			<div class="col-lg-4 about-in text-center">
+				<div class="card">
+					<div class="card-body">
+						<i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+						<h5 class="card-title mb-3">Empowerment</h5>
+						<p class="card-text">We believe that all people should be empowered to live fulfilling lives. We empower young people to recognize their full potential and provide them with the chances to achieve their dreams.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 about-in text-center my-lg-0 my-3">
+				<div class="card active">
+					<div class="card-body">
+						<i class="fa fa-laptop" aria-hidden="true"></i>
+						<h5 class="card-title mb-3">Innovation</h5>
+						<p class="card-text">We strive to turn crazy ideas into reality. We convert barriers into opportunities and give young people the access and means to innovate solutions to societal problems.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 about-in text-center">
+				<div class="card">
+					<div class="card-body">
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<h5 class="card-title mb-3">Youth Leadership</h5>
+						<p class="card-text">We cultivate youth leadership in our programs' design and implementation. We believe that young people are the leaders of today and tomorrow.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- welcome -->
+
+
+<!-- //welcome -->
+<!-- modal-about -->
+<div class="modal bnr-modal fade" id="myModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+			<div class="modal-body modal-spa">
+				<h4>Igire Rwanda Organization (IRO)</h4>
+				<p style="color: #000;">
+					Igire Rwanda organization (IRO) is a non-government organization which has been founded by Innocent Mbanda and co-founder Jean-Jacques Iradukunda. Organization started in May 2016, as small group of young people interested in standing up to help other youth to work. Their goal was to encourage youth to stop questioning asking and looking for jobs instead use skills, talents and opportunities they have to create their own jobs. This small group of youth started by providing training to youth who have a small business in order to help them with skills to manage their business. The founder member was worried about the youth business which falls under loss at starting stage as they invested their small amount of their life savings. They started training and mentoring youth who did not have to school but have business with business skills.
+					<br><br>
+					August 15 2016, Innocent the Founder and Jean Jacques the Co-founder organized another team of youth who are a delight for the social and economic development of youth to come and work together. They started agreed to start an organization with the mission to assist youth to amass knowledge and skills that lead to their self-reliance and enable them to create opportunities for other youth.
+					<br><br>
+					Igire Rwanda Organization envisages a Rwandan society where youth can live a fulfilled life, and walk in the fullness of their potential.
+					<br><br>
+					<b>Empowerment:</b> We believe that every single individual in society needs empowerment. We create opportunities for the empowerment and full realisation of young people potential. IRO believes everyone in the community needs employment and it’s our jobs to creating an environment where everyone has an opportunity to create his/her own employment and full realisation of discovering his/her potential career.
+					<br><br>
+					<b>Innovation:</b> We strive to turn ideas into reality. We turn the walls an opportunity for young people to find solutions for their problems.
+					<br><br>
+					<b>Partnership:</b> We welcome everyone who cares and believes youth are the catalyst of social and economic development of our imminent
+					<br><br>
+					<b>Youth Leadership:</b> We value youth leadership in project design and implementation. We believe youth are leaders of today and tomorrow.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //modal-about -->
+<!-- trips -->
+<!--<div class="trips">
+<div class="container">
+<div class="trips-agileinfo">
+<div class="col-md-6 trip-agileitsimg">
+
+</div>
+<div class="col-md-6 trip-agileitstext welcome-w3lleft">
+<h3>IRO Projects</h3>
+<h5>Girls in ICT</h5>
+<p>
+Girls in ICT Project- Girls in ICT project is a project which is designed to help young girls who have dropped out the school due to different problems such as pregnancy, family problems and poverty gain access to the quality education which will help them to be job creators
+</p>
+<div id="owl-demo" class="owl-carousel owl-theme">
+<div class="item agile-item project-img">
+<img src="https://farm5.staticflickr.com/4529/37836197515_51cddd15a9_b.jpg" class="trip-w3img" alt=""/>
+</div>
+<div class="item agile-item project-img">
+<img src="https://farm5.staticflickr.com/4582/38668188776_33a90f146a_b.jpg" class="trip-w3img" alt=""/>
+</div>
+<div class="item agile-item project-img">
+<img src="https://farm5.staticflickr.com/4564/38668189316_c17742ee25_b.jpg" class="trip-w3img" alt=""/>
+</div>
+<div class="item agile-item project-img">
+<img src="https://farm5.staticflickr.com/4530/38691556182_b7affa993f_b.jpg" class="trip-w3img" alt=""/>
+</div>
+<div class="item agile-item project-img">
+<img src="https://farm5.staticflickr.com/4546/37836194745_9eb0e8d21f_b.jpg" class="trip-w3img" alt=""/>
+</div>
+<div class="item agile-item project-img">
+<img src="https://farm5.staticflickr.com/4547/38668196006_75a6c97cf7_b.jpg" class="trip-w3img" alt=""/>
+</div>
+<div class="item agile-item project-img">
+<img src="https://farm5.staticflickr.com/4582/37836192905_bfd81835ed_b.jpg" class="trip-w3img" alt=""/>
+</div>
+<div class="item agile-item project-img">
+<img src="https://farm5.staticflickr.com/4569/37836195625_773ce16678_b.jpg" class="trip-w3img" alt=""/>
+</div>
+<div class="item agile-item project-img">
+<img src="https://farm5.staticflickr.com/4524/38668186246_715b485766_b.jpg" class="trip-w3img" alt=""/>
+</div>
+<div class="item agile-item project-img">
+<img src="https://farm5.staticflickr.com/4518/38691556902_37c26f4baf_b.jpg" class="trip-w3img" alt=""/>
+</div>
+</div>
+<script>
+$(document).ready(function() {
+$("#owl-demo").owlCarousel({
+autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+items : 3,
+itemsDesktop : [768,3],
+itemsDesktopSmall : [414,4]
+
+});
+
+});
+</script>
+</div>
+<div class="clearfix"> </div>
+</div>
+</div>
+</div>
+<!-- //trips -->
+<!-- news -->
+<!-- <
+<div class="news">
+<div class="container">
+<h3 class="w3agileits-title">SheCanCode Program</h3>
+div class="new-agileinfo">
+<div class="col-md-4 news-left">
+<ul id="demo1_thumbs" class="list-inline">
+<li><a href="images/img2.jpg"><img src="images/i1.jpg" alt="" data-desoslide-caption="<h3>Maecenas aliqua</h3> <br>Eligendi optio nam libero tempore cum soluta nobis est cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus">
+<div class="news-w3text">
+<h4>Maecenas aliqua</h4>
+<h6><i class="fa fa-calendar" aria-hidden="true"></i> 05 / 09 / 2016</h6>
+<p>Integer viverra eleifend neque, duis vulputate tempus laoreet. </p>
+</div>
+</a></li>
+<li><a href="images/img1.jpg"><img src="images/i1.jpg" alt="" data-desoslide-caption="<h3>Facere possimus </h3> <br>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus">
+<div class="news-w3text">
+<h4>Facere possimus</h4>
+<h6><i class="fa fa-calendar" aria-hidden="true"></i> 05 / 09 / 2016</h6>
+<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>
+</div>
+</a></li>
+<li><a href="images/img3.jpg"><img src="images/i3.jpg" alt="" data-desoslide-caption="<h3>Nulla molestie</h3> <br>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus">
+<div class="news-w3text">
+<h4>Nulla molestie</h4>
+<h6><i class="fa fa-calendar" aria-hidden="true"></i> 05 / 09 / 2016</h6>
+<p>Aliquam erat volutpat. Duis vulputate tempus laoreet.</p>
+</div>
+</a></li>
+<li><a href="images/img4.jpg"><img src="images/i4.jpg" alt="" data-desoslide-caption="<h3>Duis accumsan</h3> <br>Eligendi optio nam libero tempore cum soluta nobis est cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus">
+<div class="news-w3text">
+<h4>Duis accumsan</h4>
+<h6><i class="fa fa-calendar" aria-hidden="true"></i> 05 / 09 / 2016</h6>
+<p>Integer viverra eleifend neque, duis vulputate tempus laoreet. </p>
+</div>
+</a></li>
+</ul>
+</div>
+<div id="demo1_main_image" class="col-md-8  news-right">
+
+</div>
+-->
+<script>
+	$('#demo1_thumbs').desoSlide({
+		main: {
+			container: '#demo1_main_image',
+			cssClass: 'img-responsive'
+		},
+		effect: 'sideFade',
+		caption: true
+	});
+</script>
+<!-- //news -->
+
+<!-- menu js -->
+<script>
+	$('.toggle').on('click', function() {
+		$('.menu').toggleClass('open');
+		$('.w3nav').toggleClass('show-w3nav');
+		$('.w3nav a').toggleClass('show-w3nav-link');
+		$('.toggle').toggleClass('close');
+		$('.header-icon').toggle(800);
+	});
+</script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-	</script>
-	<!-- //end-smooth-scrolling -->	
-	<!-- smooth-scrolling-of-move-up -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
-			
-			$().UItoTop({ easingType: 'easeOutQuart' });
-			
 		});
-	</script>
-	<script type="text/javascript">
-		$('.obj-icon-1').on({
-			mouseover: function(){
-				$('.objective')[0].show();
-			}
-		})
-	</script>
+	});
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		var defaults = {
+		containerID: 'toTop', // fading element id
+		containerHoverID: 'toTopHover', // fading element hover id
+		scrollSpeed: 1200,
+		easingType: 'linear'
+	};
+	*/
+
+	$().UItoTop({ easingType: 'easeOutQuart' });
+
+});
+</script>
+<script type="text/javascript">
+	$('.obj-icon-1').on({
+		mouseover: function(){
+			$('.objective')[0].show();
+		}
+	})
+</script>
 </body>
 </html>
