@@ -34,8 +34,8 @@
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
 								<%= link_to "SheCanCode", shecancode_path, class: "dropdown-item text-uppercase list-group-item"  %>
-								<a class="dropdown-item text-uppercase list-group-item" href="#stats">Girls in ICT</a>
-								<a class="dropdown-item text-uppercase  list-group-item" href="#">Kufandisha Rwanda Fellowship</a>
+								<!-- <a class="dropdown-item text-uppercase list-group-item" href="#stats">Girls in ICT</a>
+								<a class="dropdown-item text-uppercase  list-group-item" href="#">Kufandisha Rwanda Fellowship</a> -->
 							</div>
 						</li>
 						<li class="nav-item">
@@ -50,57 +50,28 @@
 		</div>
 		<!-- //navigation -->
 	</header>
+
 	<div class="banner">
-		<div class="main-w3pvt">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-6 banner-img aos-init aos-animate" data-aos="fade-right">
-						<div class="effect-w3">
-							<img src="images/img.jpg" alt="" class="img-fluid image1">
-							<img src="images/img.jpg" alt="" class="img-fluid image2">
-							<img src="images/img.jpg" alt="" class="img-fluid image3">
-							<img src="images/img.jpg" alt="" class="img-fluid image4">
-						</div>
-					</div>
-					<!-- <div class="col-lg-6 style-banner aos-init aos-animate" data-aos="zoom-in-left">
-					<h1 class="text-white font-weight-bold">Igire Rwanda Organization</h1>
-					<p class="mt-sm-4 mt-4 text-light">IRO is an NGO founded by Innocent Mbanda and co-founder Jean-Jacques Iradukunda in May 2016. IRO began as small group of young people interested in working togehter to empower their peers. Their goal was to encourage youth to use their skills and talents to find, or create opportunities.</p>
-					<a href="about.html" class="btn button-style mt-sm-5 mt-4 scroll">Read More</a>
-				</div> -->
-				<ul class="bg-bubbles">
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="cstyle-banner text-center aos-init aos-animate" data-aos="zoom-in-left">
+					<h1 class="text-white font-weight-bold">Welcome to IRO!</h1>
+					<p class="mt-sm-4 mt-4 text-light"><p>IRO is an NGO founded by Innocent Mbanda and co-founder Jean-Jacques Iradukunda in May 2016. IRO began as small group of young people interested in working together to empower their peers. Their goal was to encourage youth to use their skills and talents to find, or create opportunities.</p>
+					<%= link_to "Read More", about_path, class: "read-more btn button-style mt-sm-5 mt-4"%>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 
 <!-- //banner -->
 
+
 <!-- about -->
-<div class="about py-5" id="about">
-	<div class="container py-xl-5 py-lg-3">
-		<h3 class="tittle text-center text-dark font-weight-bold">Igire Rwanda Organization (IRO)</h3>
-		<div class="row mb-lg-4">
-			<p class="sub-tittle text-center mt-3 mb-sm-5 mb-4">IRO is an NGO founded by Innocent Mbanda and co-founder Jean-Jacques Iradukunda in May 2016. IRO began as small group of young people interested in working togehter to empower their peers. Their goal was to encourage youth to use their skills and talents to find, or create opportunities.</p>
-		</div>
-		<div class="row text-center">
-			<%= link_to "Read More", about_path, class: "read-more btn button-style mt-sm-5 mt-4"%>
-		</div>
-	</div>
-</div>
+
 <section class="banner-bottom-w3layouts py-5" id="services">
 	<div class="container py-xl-5 py-lg-3">
+		<h3 class="tittle text-center text-dark font-weight-bold">What We Do</h3>
 		<div class="row pt-lg-4 aos-init aos-animate" data-aos="zoom-in">
 			<div class="col-lg-4 about-in text-center">
 				<div class="card">
@@ -134,10 +105,51 @@
 </section>
 
 <!-- welcome -->
+<div class="middlesection-w3pvt-lau py-5" id="testi">
+	<div class="container py-xl-5 py-lg-3">
+		<div class="left-build-wthree aboutright-w3pvt-lauwthree">
+			<div class="row text-center py-sm-3">
+				<div class="col-md-3 col-6 w3layouts_stats_left w3_counter_grid aos-init aos-animate" data-aos="zoom-in">
+					<p class="counter">120</p>
+					<p class="para-text-w3ls text-light">Students Trained</p>
+				</div>
+				<div class="col-md-3 col-6 w3layouts_stats_left w3_counter_grid2 aos-init aos-animate" data-aos="zoom-in">
+					<p class="counter">1200</p>
+					<p class="para-text-w3ls text-light">Happy Customers</p>
+				</div>
+				<div class="col-md-3 col-6 w3layouts_stats_left w3_counter_grid1 mt-md-0 mt-4 aos-init aos-animate" data-aos="zoom-in">
+					<p class="counter">400</p>
+					<p class="para-text-w3ls text-light">Rates</p>
+				</div>
+				<div class="col-md-3 col-6 w3layouts_stats_left w3_counter_grid1 mt-md-0 mt-4 aos-init aos-animate" data-aos="zoom-in">
+					<p class="counter">800</p>
+					<p class="para-text-w3ls text-light">Awards Won</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<section class="about py-5" id="pricing">
+	<div class="container py-xl-5 py-lg-3">
+		<h3 class="tittle text-center text-dark font-weight-bold">SheCanCode</h3>
+		<div class="row text-center">
+			<%= image_tag("/assets/shecancode.png",  alt: "shecancode", class: "img-fluid") %>
+		</div>
+		<div class="row mb-lg-4">
+			<p class="sub-tittle text-center mt-3 mb-sm-5 mb-4">Igire Rwanda Organization, in partnership with the US Embassy in Kigali, is providing a 3-month scholarship to 25 girls who are interested in pursuing a career in tech industry. Girls will be taught advanced programing languages such as HTML, CSS, and JavaScript to help them to become front-end software engineers. While students are responsible for their own laptops, the scholarship covers all other learning costs.</p>
+		</div>
+		<div class="row text-center">
+			<%= link_to "Apply Now!", "https://docs.google.com/forms/d/e/1FAIpQLSc6dkdOcAfJToBCT7y-mnQwMi5aTmOIkMM3ZN93v7CHnsR30A/viewform?c=0&w=1", class: "read-more btn button-style mt-sm-5 mt-4"%>
+		</div>
+	</div>
+</section>
 
 
 <!-- //welcome -->
-<!-- modal-about -->
+<!-- modal-about
 <div class="modal bnr-modal fade" id="myModal" tabindex="-1" role="dialog">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
@@ -165,13 +177,15 @@
 		</div>
 	</div>
 </div>
+-->
+
+
 <!-- //modal-about -->
 <!-- trips -->
 <!--<div class="trips">
 <div class="container">
 <div class="trips-agileinfo">
 <div class="col-md-6 trip-agileitsimg">
-
 </div>
 <div class="col-md-6 trip-agileitstext welcome-w3lleft">
 <h3>IRO Projects</h3>
