@@ -1583,6 +1583,11 @@
          font-size: 11px;
      }
 
+     #logo {
+       display: block;
+       margin: auto;
+     }
+
 
  }
 
