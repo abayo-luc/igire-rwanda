@@ -1,332 +1,216 @@
-<div class="team-page">
-<div class="banner w3about">
-	<!-- header -->
-	<div class="header">
-		<div class="container">
-			<div class="header-w3lsrow"> 
-				<div class="menu"> 
-					<div class="toggle"></div> 
-					<ul class="w3nav">
-						<li><a href="index.html"> Home</a></li>
-						<li><a href="about.html"> About</a></li> 
-						<li><a href="gallery.html"> Gallery</a></li> 
-						<li><a href="contact.html" class="active"> Contact Us</a></li>
-					</ul>
-					<div class="clearfix"> </div>
-				</div> 
-				<div class="logo">
-					<h1><a href="index.html">IGIRE</a></h1>
-				</div>  
-				<div class="header-right">   
-					<ul class="hidden-xs header-icon">
-						<li><a href="https://web.facebook.com/igirerwandaorganization/" target="_blank"><i class="fa fa-facebook"> </i><span>Facebook</span></a></li>
-						<li><a href="https://twitter.com/igirerwandaorg" target="_blank"><i class="fa fa-twitter"> </i><span>Twitter</span></a></li>
-						<li><a href="#" target="_blank"><i class="fa fa-linkedin"> </i><span>LinkedIn</span></a></li>
-					</ul>
-					<div class="clearfix"> </div> 
+<!-- header -->
+<header>
+	<!-- navigation -->
+	<div class="main-top py-1 aos-init aos-animate" data-aos="fade-down">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<!-- logo -->
+				<%= link_to image_tag("/assets/igire.png",  alt: "igire", class: "img-fluid", id: "logo"), index_path, class: "navbar-brand font-weight-bold" %>
+				<!-- //logo -->
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="False" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			<div class="navbar-collapse text-center collapse" id="navbarSupportedContent" style="">
+				<ul class="navbar-nav ml-lg-auto">
+					<li class="nav-item active">
+						<%= link_to "Home", index_path, class: "nav-link text-uppercase"%>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							About Us
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
+							<%= link_to "Our Organization", about_path, class: "dropdown-item text-uppercase list-group-item"  %>
+							<%= link_to "Our Team", team_path, class: "dropdown-item text-uppercase list-group-item active"  %>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Programs
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
+							<%= link_to "SheCanCode", shecancode_path, class: "dropdown-item text-uppercase list-group-item"  %>
+							<!-- <a class="dropdown-item text-uppercase list-group-item" href="#stats">Girls in ICT</a>
+							<a class="dropdown-item text-uppercase  list-group-item" href="#">Kufandisha Rwanda Fellowship</a> -->
+						</div>
+					</li>
+					<li class="nav-item">
+						<%= link_to "Contact Us", contact_path, class: "nav-link text-uppercase"  %>
+					</li>
+					<li class="nav-item ml-lg-5 mt-lg-0 mt-sm-5 mt-4">
+						<a href="#" class="reqe-button text-uppercase">Donate</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+<!-- //navigation -->
+</header>
+<!-- //header -->
+<div class="pages">
+</div>
+
+<section class="team py-5">
+	<div class="container py-xl-5 py-lg-3">
+		<h3 class="tittle text-center text-dark font-weight-bold">Our Team</h3>
+		<p class="sub-tittle text-center mt-3 mb-sm-5 mb-4">The IRO team is made up passionate individuals with a variety of specialties and interests. Reach out to one of us on social media to see what we're all doing!</p>
+		<div class="row inner-sec-w3layouts-w3pvt-lauinfo aos-init aos-animate" data-aos="zoom-in-down">
+			<div class="col-md-4 team-grids text-center">
+				<img src="http://res.cloudinary.com/nexpals/image/upload/v1516660356/AAEAAQAAAAAAAAjLAAAAJDM4ZGJjZDM5LWI2ZTAtNGVkYS1hYjc5LTJkNzAxYzNiMWQzNw_kxvsfq.jpg" class="img-fluid" alt="innocent">
+				<div class="team-info">
+					<div class="caption">
+						<h4>Innocent Mbanda</h4>
+						<h6>Chief Executive Officer & Founder</h6>
+						<small><strong>Innocent</strong> is the founder and Chief Executive Office of Igire Rwanda Organization (IRO). He holds two Bachelor's degrees, one in Management from Southern New Hampshire University and one in Education & Economics from the National University of Rwanda. He has dedicated his professional life to improving the <strong>quality of education in Africa</strong> and supporting young people to become <strong>self-reliant</strong>.</small>
+					</div>
 				</div>
-				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-4 team-grids text-center">
+				<img src="http://res.cloudinary.com/nexpals/image/upload/v1516658881/Jean_Jacques_cdzcff.jpg" class="img-fluid" alt="jeanjacques">
+				<div class="team-info">
+					<div class="caption">
+						<h4>Jean-Jacques Iradukunda</h4>
+						<h6>Chief of Operations & Co-Founder</h6>
+						<small><strong>Jean Jacques</strong> holds a Bachelor's degree in Health Care Management from Southern New Hampshire University. He enjoys working on projects that help improve the quality of <strong>education</strong> and <strong>health</strong> in different communities.</small>
+					</div>
+					<div class="social-icons-section">
+						<a class="fac" href="https://web.facebook.com/jeanjacques.iradukunda">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a class="linkedin" href="https://www.linkedin.com/in/jean-jacques-iradukunda-867aa1103/">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 team-grids my-md-0 my-4 text-center">
+				<img src="http://res.cloudinary.com/nexpals/image/upload/v1516658882/Joshua_drkbft.jpg" class="img-fluid" alt="">
+				<div class="team-info">
+					<div class="caption">
+						<h4>Joshua Stephen Kawanguzir</h4>
+						<h6>Communications Officer</h6>
+						<small><strong>Josh</strong> is currently pursuing his Bachelor’s degree in Logistics & Operations from Southern New Hampshire University (USA). He is passionate about <strong>youth development</strong> and <strong>improving the quality of education</strong>.</small>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- //header --> 
-	<!-- banner-text -->
-	<div class="banner-text"> 
-		<div class="container"> 
-			<div class="banner-w3lstext">
-				<h2>Our Team</h2>
-			</div> 	 
+		<div class="row inner-sec-w3layouts-w3pvt-lauinfo aos-init aos-animate" data-aos="zoom-in-down">
+			<div class="col-md-4 team-grids text-center">
+				<img src="http://res.cloudinary.com/nexpals/image/upload/v1516658887/Arnaud_ck2a74.png" class="img-fluid" alt="">
+				<div class="team-info">
+					<div class="caption">
+						<h4>Arnaud Michel Nibaruta</h4>
+						<h6>Executive Assistant Officer</h6>
+						<small><strong>Arnaud</strong>, a Rwandan-Burundian, is a sophomore at Kepler University studying Healthcare Management with a concentration in Global Perspectives. He is passionate about <strong>education</strong>, <strong>health promotion</strong>, and <strong>community engagement</strong>. He has five years of experience in health education and social media communication.</small>
+					</div>
+					<div class="social-icons-section">
+						<a class="fac" href="https://www.facebook.com/arnaud.michel.nibaruta">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a class="twitter" href="https://www.twitter.com/manibaruta">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a class="instagram" href="https://www.instagram.com/arnaud.nibaruta">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 team-grids text-center">
+				<img src="http://res.cloudinary.com/nexpals/image/upload/v1516660261/AAEAAQAAAAAAAA1tAAAAJDQxMTBmODM4LTY1YjYtNDZkYS1iZGRiLWFhNzc3NDBkOWZkZg_pe8boq.jpg" class="img-fluid" alt="">
+				<div class="team-info">
+					<div class="caption">
+						<h4>Joe Ntwali</h4>
+						<h6>Director of Youth Programs</h6>
+						<small><strong>Joe</strong> is a facilitator at Pivot Academy Mothering Across Continents-Pivot Academy
+							Southern New Hampshire University. He is a young Rwandan and Burundian passionate about improving the quality of <strong>education</strong> and <strong>health care systems</strong> globally, especially in rural areas, refugee camps, and developing countries.</small>
+						</div>
+						<div class="social-icons-section">
+							<a class="linkedin" href="https://www.linkedin.com/in/joe-ntwali-8b9624102/">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 team-grids text-center">
+					<img src="http://res.cloudinary.com/nexpals/image/upload/v1516658881/Fabrice_trebmf.jpg" class="img-fluid" alt="">
+					<div class="team-info">
+						<div class="caption">
+							<h4>Alain Fabrice Mwiseneza</h4>
+							<h6>Public Relations Officer</h6>
+							<small>Alain Fabrice Mwiseneza.  He has a Bachelor's degree in Law from the National University of Rwanda. He also has a degree in Legal Practice from the Institute of Legal Practice and Development of Rwanda and a Leadership certificate from Compassion International. He currently works at a CFL Advocates, a Rwandan law firm. He is passionate about the development of youth in all fields of life. He believes that young people must know their rights and work together for justic and equality for all.</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row inner-sec-w3layouts-w3pvt-lauinfo aos-init aos-animate" data-aos="zoom-in-down">
+				<div class="col-md-4 team-grids text-center">
+					<img src="http://res.cloudinary.com/nexpals/image/upload/v1516658882/Liza_jcka60.jpg" class="img-fluid" alt="">
+					<div class="team-info">
+						<div class="caption">
+							<h4>Liza Imbonabake</h4>
+							<h6>Director of Gender Development</h6>
+							<small><strong>Liza</strong> has a Bachelor's degree in Management with a concentration of Logistics & Operations from Kepler-Southern New Hampshire University. She believes in hard work, determination and discipline. She is passionate  about <strong>debate</strong>, <strong>social volunteering</strong>, <strong>women empowerment</strong>, and enjoys bringing out the best in her and her fellow team members.</small>
+						</div>
+						<div class="social-icons-section">
+							<a class="linkedin" href="https://www.linkedin.com/in/imbonabake-liza-b7b841102/">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 team-grids text-center">
+					<img src="http://res.cloudinary.com/nexpals/image/upload/v1516660006/AAEAAQAAAAAAAAeQAAAAJGJiMjc5M2Q1LWYzMDYtNDBlYy04ODdjLWYwNGZkYWYxOGVmNw_qjfyx1.jpg" class="img-fluid" alt="">
+					<div class="team-info">
+						<div class="caption">
+							<h4>Roger Uwayezu</h4>
+							<h6>IT Officer</h6>
+							<small><strong>Roger</strong> is a full stack developer. He worked as a mentor at the Programmers 4 Peace Boot-camp. He is a specialist in developing websites and web applications via Ruby on Rails, JavaScript and CSS.</small>
+						</div>
+						<div class="social-icons-section">
+							<a class="twitter" href="hhttps://twitter.com/paciroger">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-	<!-- //banner-text --> 
-</div>
+	</section>
 
-<div class="the-team">
-	<div class="row mb-50">
-		<div class="col-team col-xs-4 col-md-4">
-			<figure class="team-profile">
-				<img alt=""  src="http://res.cloudinary.com/nexpals/image/upload/v1516658881/Jean_Jacques_cdzcff.jpg">
-				<figcaption class="team-caption">
-					<div class="team-meta">
-						<p class="team-bio hidden-xs">
-							<small>Jean Jacques holds a Bachelor's Degree in Health Care Management from Southern New Hampshire University. He is interested in community development projects especially in education and health domains. I enjoy working on projects that help in improving the quality of Education and Health in different communities.</small>
-						</p>
-					</div>
-					<ul class="team-social social-list">
-						<li>
-						<a href="https://web.facebook.com/jeanjacques.iradukunda" target="_blank" class="fa fa-facebook"></a>
-						</li>
-						<li>
-						<a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-						</li>
-						<li>
-						<a href="https://www.linkedin.com/in/jean-jacques-iradukunda-867aa1103/"></a>
-						</li>
-						<!-- <li>
-						<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-						</li> -->
-					</ul>
-				</figcaption>
-			</figure>
-			<div class="member-title">
-				<h4 class="text-center">Jean Jacques</h4>
-				<h6 class="text-center">Chief of Operations/ Co-Founder </h6>
-			</div>
-		</div>
-	  <div class="col-team col-xs-4 col-md-4">
-	  	<figure class="team-profile">
-	  		<img alt=""  src="http://res.cloudinary.com/nexpals/image/upload/v1516658882/Joshua_drkbft.jpg">
-	  		<figcaption class="team-caption">
-	  			<div class="team-meta">
-	  				<p class="team-bio hidden-xs">
-	  					<small>Josh Stephen Kawanguzi is passionate about youth development and improving the quality of Education. He is completing his bachelor’s degree in Logistics and Operations from Southern New Hampshire University (USA).</small>
-	  				</p>
-	  			</div>
-	  			<ul class="team-social social-list">
-	  				<!-- <li>
-	  				<a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-	  				</li>
-	  				<li>
-	  				<a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-	  				</li> -->
-	  				<li>
-	  				<a href="https://www.linkedin.com/in/joshua-stephen-kawanguzi-3a445011a/" target="_blank" class="fa fa-linkedin"></a>
-	  				</li>
-	  				<!-- <li>
-	  				<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-	  				</li> -->
-	  			</ul>
-	  		</figcaption>
-	  	</figure>
-	  	<div class="member-title">
-	  		<h4 class="text-center">Joshua Stephen Kawanguzi</h4>
-	  		<h6 class="text-center">Communication Officer</h6>
-	  	</div>
-	  </div>
-	  <div class="col-team col-xs-4 col-md-4">
-	  	<figure class="team-profile">
-	  		<img alt=""  src="http://res.cloudinary.com/nexpals/image/upload/v1516658887/Arnaud_ck2a74.png">
-	  		<figcaption class="team-caption">
-	  			<div class="team-meta">
-	  				<p class="team-bio hidden-xs">
-	  					<small>Arnaud is a sophomore at Kepler University Program, doing Healthcare Management with a Concentration in Global Perspectives. He is Rwandan by his mother and Burundian by his father. He is passionate about education, health promotion, French, and community engagement. He has a five-year experience in health education and social media communication. In his free times, Arnaud enjoys jogging and quiz games.</small>
-	  				</p>
-	  			</div>
-	  			<ul class="team-social social-list">
-	  				<li>
-	  				<a href="https://www.facebook.com/arnaud.michel.nibaruta" target="_blank" class="fa fa-facebook"></a>
-	  				</li>
-	  				<li>
-	  				<a href="https://www.twitter.com/manibaruta" target="_blank" class="fa fa-twitter"></a>
-	  				</li>
-	  				<!-- <li>
-	  				<a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
-	  				</li> -->
-	  				<li>
-	  				<a href="https://www.instagram.com/arnaud.nibaruta" target="_blank" class="fa fa-instagram"></a>
-	  				</li>
-	  			</ul>
-	  		</figcaption>
-	  	</figure>
-	  	<div class="member-title">
-	  		<h4 class="text-center">Arnaud Michel Nibaruta</h4>
-	  		<h6 class="text-center">Executive Assistant Officer</h6>
-	  	</div>
-	  </div>
-	</div>
-	<div class="row mb-50">
-		<div class="col-team col-xs-4 col-md-4 col-xs-offset-2 col-md-offset-2">
-			<figure class="team-profile">
-				<img alt=""  src="http://res.cloudinary.com/nexpals/image/upload/v1516660356/AAEAAQAAAAAAAAjLAAAAJDM4ZGJjZDM5LWI2ZTAtNGVkYS1hYjc5LTJkNzAxYzNiMWQzNw_kxvsfq.jpg">
-				<figcaption class="team-caption">
-					<div class="team-meta">
-						<p class="team-bio hidden-xs">
-							<small> Innocent is founder and Chief Executive Office of Igire Rwanda Organization. Prior to founding Igire Rwanda Organization (IRO), Innocent served as Administrative Assistant at the Yeejo TV where he managed internal and external operations. Prior to joining Yeejo TV, he served as customer executive at Airtel Rwanda. He holds bachelor's  degree in Education and Economics from the National University of Rwanda. He also has a bachelor's degree in Management from the Southern New Hampshire University in USA. He has dedicated his professional life to improve the quality of education in Africa and supporting young people to become self-reliant.</small>
-						</p>
-					</div>
-					<ul class="team-social social-list">
-						<li>
-						<a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-						</li>
-						<li>
-						<a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-						</li>
-						<li>
-						<a href="https://www.linkedin.com/in/mbanda-innocent-a91737aa/" target="_blank" class="fa fa-linkedin"></a>
-						</li>
-						<li>
-						<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-						</li>
-					</ul>
-				</figcaption>
-			</figure>
-			<div class="member-title">
-				<h4 class="text-center">Innocent Mbanda</h4>
-				<h6 class="text-center">CEO / Founder </h6>
-			</div>
-		</div>	
-		<div class="col-team col-xs-4 col-md-4 ">
-			<figure class="team-profile">
-				<img alt=""  src="http://res.cloudinary.com/nexpals/image/upload/v1516660261/AAEAAQAAAAAAAA1tAAAAJDQxMTBmODM4LTY1YjYtNDZkYS1iZGRiLWFhNzc3NDBkOWZkZg_pe8boq.jpg">
-				<figcaption class="team-caption">
-					<div class="team-meta">
-						<p class="team-bio hidden-xs">
-							<small> Facilitator at Pivot Academy Mothering Across Continents-Pivot Academy
- 							Southern New Hampshire University. He is young African -Rwandan and Burundian- passionate about improving the quality of education and Health Care systems globally, focusing in rural areas, refugee camps, and developing countries.</small>
-						</p>
-					</div>
-					<ul class="team-social social-list">
-				<!-- 		<li>
-						<a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-						</li>
-						<li>
-						<a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-						</li> -->
-						<li>
-						<a href="https://www.linkedin.com/in/joe-ntwali-8b9624102/"></a>
-						</li>
-						<!-- <li>
-						<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-						</li> -->
-					</ul>
-				</figcaption>
-			</figure>
-			<div class="member-title">
-				<h4 class="text-center">Joe Ntwali</h4>
-				<h6 class="text-center">Director of Youth Program</h6>
-			</div>
-		</div>	
-	</div>
-	<div class="row mb-50">
-		<div class="col-team col-xs-4 col-md-4">
-			<figure class="team-profile">
-				<img alt=""  src="http://res.cloudinary.com/nexpals/image/upload/v1516658881/Fabrice_trebmf.jpg">
-				<figcaption class="team-caption">
-					<div class="team-meta">
-						<p class="team-bio hidden-xs">
-							<small>MWISENEZA Alain Fabrice.  He has a bachelor degree in law from National university of Rwanda; I have also a diploma in legal Practice from Institute of legal Practice and Development of Rwanda and a certificate of leadership from Compassion International. I am working in CFL Advocates (Law Firm). I am passionate about development of youth in all fields of life, especially in justice; the development of the youth we all wish, is impossible without justice and equality of people, every youth must know his right and obligation in his development and also in development of the country. I hope together we can make change.</small>
-						</p>
-					</div>
-					<ul class="team-social social-list">
-						<li>
-						<a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-						</li>
-						<li>
-						<a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-						</li>
-						<li>
-						<a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
-						</li>
-						<li>
-						<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-						</li>
-					</ul>
-				</figcaption>
-			</figure>
-			<div class="member-title">
-				<h4 class="text-center">MWISENEZA Alain Fabrice</h4>
-				<h6 class="text-center">Public Relations</h6>
-			</div>
-		</div>
-	  <div class="col-team col-xs-4 col-md-4">
-	  	<figure class="team-profile">
-	  		<img alt=""  src="http://res.cloudinary.com/nexpals/image/upload/v1516658882/Liza_jcka60.jpg">
-	  		<figcaption class="team-caption">
-	  			<div class="team-meta">
-	  				<p class="team-bio hidden-xs">
-	  					<small>Liza Imbonabake, a graduate at Southern New Hampshire University through Kepler program in Bachelors of Management concentration in logistics and operations. Liza was born and raised in Rwanda.
-						Liza is a passionate lady that believes in hard work, determination and discipline. She is passionate in debate, social volunteering, women empowerment, and enjoys bringing out the best in her and her fellows.
-						</small>
-	  				</p>
-	  			</div>
-	  			<ul class="team-social social-list">
-	  				<!-- <li>
-	  				<a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
-	  				</li>
-	  				<li>
-	  				<a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
-	  				</li> -->
-	  				<li>
-	  				<a href="https://www.linkedin.com/in/imbonabake-liza-b7b841102/" target="_blank" class="fa fa-linkedin"></a>
-	  				</li>
-	  				<!-- <li>
-	  				<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-	  				</li> -->
-	  			</ul>
-	  		</figcaption>
-	  	</figure>
-	  	<div class="member-title">
-	  		<h4 class="text-center">Liza Imbonabake</h4>
-	  		<h6 class="text-center">Director of Gender Development</h6>
-	  	</div>
-	  </div>
-	  <div class="col-team col-xs-4 col-md-4">
-	  	<figure class="team-profile">
-	  		<img alt=""  src="http://res.cloudinary.com/nexpals/image/upload/v1516660006/AAEAAQAAAAAAAAeQAAAAJGJiMjc5M2Q1LWYzMDYtNDBlYy04ODdjLWYwNGZkYWYxOGVmNw_qjfyx1.jpg">
-	  		<figcaption class="team-caption">
-	  			<div class="team-meta">
-	  				<p class="team-bio hidden-xs">
-	  					<small>
-	  					My name is Uwayezu is full stack developer, He worked as a mentor at Programmers 4 Peace Boot-camp. He is specialist in developing a website for a local NGO and two web applications. He mastered  in ruby on rails, JavaScript and CSS. He is full  backend and front end development.</small>
-	  				</p>
-	  			</div>
-	  			<ul class="team-social social-list">
-	  				<li>
-	  				<a href="https://www.facebook.com/rogerpacifiqueu"></a>
-	  				</li>
-	  				<li>
-	  				<a href="https://twitter.com/paciroger" target="_blank" class="fa fa-twitter"></a>
-	  				</li>
-	  				<li>
-	  				<a href="https://www.linkedin.com/in/roger-uwayezu-a52a07103"></a>
-	  				</li>
-	  				<!-- <li>
-	  				<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
-	  				</li> -->
-	  			</ul>
-	  		</figcaption>
-	  	</figure>
-	  	<div class="member-title">
-	  		<h4 class="text-center">UWAYEZU ROGER</h4>
-	  		<h6 class="text-center">IT Officer</h6>
-	  	</div>
-	  </div>
-	</div>
-</div>
-
-<script>
-	$('.toggle').on('click', function() {
-		$('.menu').toggleClass('open');  
-		$('.w3nav').toggleClass('show-w3nav');  
-		$('.w3nav a').toggleClass('show-w3nav-link');  
-		$('.toggle').toggleClass('close');
-		$('.header-icon').toggle(800);  
-	});
-</script>
-<script type="text/javascript">
+	<script>
+		$('.toggle').on('click', function() {
+			$('.menu').toggleClass('open');
+			$('.w3nav').toggleClass('show-w3nav');
+			$('.w3nav a').toggleClass('show-w3nav-link');
+			$('.toggle').toggleClass('close');
+			$('.header-icon').toggle(800);
+		});
+	</script>
+	<script type="text/javascript">
 		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
+			$(".scroll").click(function(event){
 				event.preventDefault();
-		
-		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 			});
 		});
-</script>
-<!-- //end-smooth-scrolling -->	
-<!-- smooth-scrolling-of-move-up -->
-<script type="text/javascript">
-	$(document).ready(function() {
-		/*
-		var defaults = {
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
 			containerID: 'toTop', // fading element id
 			containerHoverID: 'toTopHover', // fading element hover id
 			scrollSpeed: 1200,
-			easingType: 'linear' 
+			easingType: 'linear'
 		};
 		*/
-		
+
 		$().UItoTop({ easingType: 'easeOutQuart' });
-		
+
 	});
 </script>
-</div>

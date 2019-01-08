@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0" style>
+	<!-- banner -->
+	<!-- header -->
+	<header>
+		<!-- navigation -->
+		<div class="main-top py-1 aos-init aos-animate" data-aos="fade-down">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid">
+					<!-- logo -->
+					<%= link_to image_tag("/assets/igire.png",  alt: "igire", class: "img-fluid", id: "logo"), index_path, class: "navbar-brand font-weight-bold" %>
+					<!-- //logo -->
+					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				<div class="navbar-collapse text-center collapse" id="navbarSupportedContent" style="">
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item active">
+              <%= link_to "Home", index_path, class: "nav-link text-uppercase"%>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								About Us
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
+                <%= link_to "Our Organization", about_path, class: "dropdown-item text-uppercase list-group-item"  %>
+                <%= link_to "Our Team", team_path, class: "dropdown-item text-uppercase list-group-item"  %>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Programs
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
+                <%= link_to "SheCanCode", shecancode_path, class: "dropdown-item text-uppercase list-group-item active"  %>
+								<!-- <a class="dropdown-item text-uppercase list-group-item" href="#stats">Girls in ICT</a>
+								<a class="dropdown-item text-uppercase  list-group-item" href="#">Kufandisha Rwanda Fellowship</a> -->
+							</div>
+						</li>
+						<li class="nav-item">
+              <%= link_to "Contact Us", contact_path, class: "nav-link text-uppercase"  %>
+						</li>
+						<li class="nav-item ml-lg-5 mt-lg-0 mt-sm-5 mt-4">
+							<a href="#" class="reqe-button text-uppercase">Donate</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- //navigation -->
+</header>
+<!-- //header -->
+<div class="pages">
+</div>
+<!-- //banner -->
+
+
+<!-- about -->
+<section class="about py-5" id="about">
+	<div class="container py-xl-5 py-lg-3">
+		<h3 class="tittle text-center text-dark font-weight-bold">SheCanCode</h3>
+		<div class="row mb-lg-4">
+			<div class="col-lg-6 aboutright mt-xl-0 mt-lg-5 aos-init aos-animate" data-aos="fade-up">
+				<%= image_tag("/assets/shecancode.png",  alt: "shecancode", class: "img-fluid") %>
+			</div>
+			<div class="col-lg-5 aboutleft ml-xl-4 mt-lg-3 mt-4 aos-init aos-animate" data-aos="fade-up">
+				<p>SheCanCode is a 3-month coding bootcamp designed to teach young Rwandan girls front-end software development with HTML/CSS and JavaScript. The program helps girls who have completed high school to advance their careers in the growing tech industry. The students spend the first two months learning programming basics and the final month working on self-initiated final projects. Classes are held three times per week, at the US Embassy and the American Corner in the Adventist University-Gishushu.</p></br>
+				<p>The current SheCanCode cohort, which began in September, is made up of 36 women who come from a variety of different backgrounds. While many are from the Kigali City area, the students come from all regions of Rwanda.</p>
+			</div>
+		</div>
+	</div>
+</section>
+	<!-- //about -->
+
+	<!-- testimonial -->
+	<div class="testi-mkls py-5 aos-init aos-animate" id="testi" data-aos="fade-up" data-aos-duration="3000">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="test-text-mkpvt text-center py-sm-3">
+				<p class="sub-tittle text-white"><i class="fa fa-quote-left mr-2" aria-hidden="true"></i>
+					I am very proud of the SheCanCode program because it equipped me with programming skills that few Rwandan women have, and put me in a network of programmers.
+					<i class="fa fa-quote-right ml-2" aria-hidden="true"></i>
+				</p>
+				<h4 class="text-white font-weight-bold mt-sm-5 mt-4">SheCanCode Alumni</h4>
+			</div>
+		</div>
+	</div>
+	<!-- //testimonial -->
+
+	<!-- profile -->
+	<section class="about py-5" id="pricing">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="tittle text-center text-dark font-weight-bold">Our Students</h3>
+			<p class="sub-tittle text-center mt-3 mb-sm-5 mb-4"></p>
+			<div class="row inner-sec-w3layouts-w3pvt-lauinfo aos-init aos-animate" data-aos="zoom-in-down">
+				<div class="col-md-4 team-grids text-center">
+					<img src="" class="img-fluid" alt="name1">
+					<div class="team-info">
+						<div class="caption">
+							<h4>name1</h4>
+							<h6>info</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 team-grids text-center">
+					<img src="" class="img-fluid" alt="name2">
+					<div class="team-info">
+						<div class="caption">
+							<h4>name2</h4>
+							<h6>info</h6>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 team-grids text-center">
+					<img src="" class="img-fluid" alt="name3">
+					<div class="team-info">
+						<div class="caption">
+							<h4>name3</h4>
+							<h6>info</h6>
+						</div>
+					</div>
+				</div>
+				<div class="row inner-sec-w3layouts-w3pvt-lauinfo aos-init aos-animate" data-aos="zoom-in-down">
+					<div class="col-md-4 team-grids text-center">
+						<img src="" class="img-fluid" alt="name4">
+						<div class="team-info">
+							<div class="caption">
+								<h4>name4</h4>
+								<h6>info</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 team-grids text-center">
+						<img src="" class="img-fluid" alt="name5">
+						<div class="team-info">
+							<div class="caption">
+								<h4>name5</h4>
+								<h6>info</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 team-grids text-center">
+						<img src="" class="img-fluid" alt="name6">
+						<div class="team-info">
+							<div class="caption">
+								<h4>name6</h4>
+								<h6>info</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- menu js -->
+<script>
+  $('.toggle').on('click', function() {
+    $('.menu').toggleClass('open');
+    $('.w3nav').toggleClass('show-w3nav');
+    $('.w3nav a').toggleClass('show-w3nav-link');
+    $('.toggle').toggleClass('close');
+    $('.header-icon').toggle(800);
+  });
+
+  function readMore(){
+    $('.project-descr').toggle(250);
+  }
+</script>
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){
+      event.preventDefault();
+
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+    });
+  });
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    /*
+    var defaults = {
+    containerID: 'toTop', // fading element id
+    containerHoverID: 'toTopHover', // fading element hover id
+    scrollSpeed: 1200,
+    easingType: 'linear'
+  };
+  */
+
+  $().UItoTop({ easingType: 'easeOutQuart' });
+
+});
+</script>
+</body>
+</html>
