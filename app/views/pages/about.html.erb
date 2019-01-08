@@ -6,164 +6,223 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <html lang="en">
-<body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0" style>
+<body>
 	<!-- banner -->
-	<!-- header -->
-	<header>
-		<!-- navigation -->
-		<div class="main-top py-1 aos-init aos-animate" data-aos="fade-down">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container-fluid">
-					<!-- logo -->
-					<%= link_to image_tag("/assets/igire.png",  alt: "igire", class: "img-fluid", id: "logo"), index_path, class: "navbar-brand font-weight-bold" %>
-					<!-- //logo -->
-					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-				<div class="navbar-collapse text-center collapse" id="navbarSupportedContent" style="">
-					<ul class="navbar-nav ml-lg-auto">
-						<li class="nav-item active">
-              <%= link_to "Home", index_path, class: "nav-link text-uppercase"%>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								About Us
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
-                <%= link_to "Our Organization", about_path, class: "dropdown-item text-uppercase list-group-item active"  %>
-                <%= link_to "Our Team", team_path, class: "dropdown-item text-uppercase list-group-item"  %>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Programs
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
-                <%= link_to "SheCanCode", shecancode_path, class: "dropdown-item text-uppercase list-group-item"  %>
-								<!-- <a class="dropdown-item text-uppercase list-group-item" href="#stats">Girls in ICT</a>
-								<a class="dropdown-item text-uppercase  list-group-item" href="#">Kufandisha Rwanda Fellowship</a> -->
-							</div>
-						</li>
-						<li class="nav-item">
-              <%= link_to "Contact Us", contact_path, class: "nav-link text-uppercase"  %>
-						</li>
-						<li class="nav-item ml-lg-5 mt-lg-0 mt-sm-5 mt-4">
-							<a href="#" class="reqe-button text-uppercase">Donate</a>
-						</li>
-					</ul>
+	<div class="banner w3about">
+		<!-- header -->
+		<div class="header">
+			<div class="container">
+				<div class="header-w3lsrow"> 
+					<div class="menu"> 
+						<div class="toggle"></div> 
+						<ul class="w3nav">
+							<li><a href="index.html"> Home</a></li>
+							<li><a href="about.html" class="active"> About</a></li> 
+							<li><a href="gallery.html"> Gallery</a></li> 
+							<li><a href="contact.html"> Contact Us</a></li>
+							<li><a href="team.html">Our Team</a></li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div> 
+					<div class="logo">
+						<h1><a href="index.html">IGIRE</a></h1>
+					</div>  
+					<div class="header-right">   
+						<ul class="hidden-xs header-icon">
+							<li><a href="https://web.facebook.com/igirerwandaorganization/" target="_blank"><i class="fa fa-facebook"> </i><span>Facebook</span></a></li>
+							<li><a href="https://twitter.com/igirerwandaorg" target="_blank"><i class="fa fa-twitter"> </i><span>Twitter</span></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-linkedin"> </i><span>LinkedIn</span></a></li>
+						</ul>
+						<div class="clearfix"> </div> 
+					</div>
+					<div class="clearfix"> </div>
 				</div>
 			</div>
-		</nav>
-	</div>
-	<!-- //navigation -->
-</header>
-<!-- //header -->
-<div class="pages">
-</div>
-<!-- //banner -->
-
-
-<!-- about -->
-<section class="about py-5" id="about">
-	<div class="container py-xl-5 py-lg-3">
-		<%= image_tag("/assets/igire.png",  alt: "igire", class: "img-fluid") %>
-		<h3 class="tittle text-center text-dark font-weight-bold">Igire Rwanda Organization (IRO)</h3>
-		<div class="sub-tittle text-center mt-3 mb-sm-5 mb-4">
-			<p>Igire Rwanda organization (IRO) is a non-governmental organization founded by Innocent Mbanda and co-founded by Jean-Jacques Iradukunda. The organization began in May 2016, as small group of young people interested in standing up to help other youth find work. Their goal was to help young people use the skills, talents and opportunities they have to create their own jobs. IRO started by providing trainings to young small business owners to help them learn the skills to better manage their businesses. Since then, IRO has grown and offers a variety of educational programs for young people, including SheCanCode, a 3-month programming bootcamp for girls.
-			</p>
 		</div>
-	</div>
-</section>
-<!-- about -->
-
-<!-- vision -->
-<section class="about py-5" id="vision">
-	<div class="container text-center py-xl-5 py-lg-3">
-		<h3 class="tittle text-white font-weight-bold">Our Vision</h3>
-		<p class="subtittle mt-3 mb-sm-5 mb-4">To provide every young Rwandan with the skills and opportunities to pursue the career and life that they want.</p>
-	</div>
-</section>
-<!-- //vision -->
-
-
-<!-- mission -->
-<section class="about py-5" id="pricing">
-	<div class="container text-center py-xl-5 py-lg-3">
-		<h3 class="tittle text-dark font-weight-bold">Our Mission</h3>
-		<p class="subtittle text-dark font-weight-bold">
-			IRO's mission is to develop and implement programs for all Rwandan youth, especially those who come from disadvantaged backgrounds, to learn the necessary professional and technical skills to prepare them for the Rwandan job market.
-		</p>
-	</div>
-</section>
-<!-- //mission -->
-
-<!-- //values -->
-<section class="about py-5">
-	<div class="container text-center py-xl-5 py-lg-3">
-		<h3 class="tittle text-dark font-weight-bold">Our Values</h3>
-		<div class="row mb-lg-4">
-			<div class="col-lg-6 mt-xl-0 mt-lg-5 aos-init aos-animate" data-aos="fade-up">
-				<img src="https://farm5.staticflickr.com/4518/38691556902_37c26f4baf_b.jpg" alt="" class="img-fluid img-about">
-			</div>
-			<div class="col-lg-5 ml-xl-4 mt-lg-3 mt-4 aos-init aos-animate" data-aos="fade-up">
-				<h3 class="tittle text-dark font-weight-bold mb-4">Youth Development</h3>
-				<p>Our goal is to work with youth to advance towards the United Nation's "2030 Agenda", a resolution with 17 global goals established in 2015 to further world sustainable development. These goals target different social and development issues, including health, hunger, education, and poverty. Each of our programs address one or more of these goals in our effort to join individuals and organisations around the world to improve the lives of all human beings.</p>
-				<p>We believe that youth are key to this effort. Over 50% of the world's population is under the age of 30, while over 85% of those individuals are living in developing countries. There is massive potential for young people to create the change and development that the world needs right now.</p>
+		<!-- //header --> 
+		<!-- banner-text -->
+		<div class="banner-text"> 
+			<div class="container"> 
+				<div class="banner-w3lstext">
+					<h2>About Us</h2>
+				</div> 	 
 			</div>
 		</div>
-		<div class="row mb-lg-4">
-			<div class="col-lg-6 mt-xl-0 mt-lg-5 aos-init aos-animate" data-aos="fade-up">
-				<img src="https://farm5.staticflickr.com/4530/38691556182_b7affa993f_b.jpg" alt="" class="img-fluid img-about">
-			</div>
-			<div class="col-lg-5 ml-xl-4 mt-lg-3 mt-4 aos-init aos-animate" data-aos="fade-up">
-				<h3 class="tittle text-dark font-weight-bold mb-4">Gender Empowerment</h3>
-				<p>Gender equality and women’s empowerment have advanced in recent decades. Girls’ access to education has improved, the rate of child marriage has declined and significant progress has been made in the area of sexual and reproductive health and reproductive rights. Nevertheless, gender equality remains a persistent challenge for all countries worldwide and the lack of such equality is a major obstacle to sustainable development.</p>
+		<!-- //banner-text --> 
+	</div>
+	<!-- //banner -->
+	<!-- about -->
+	<div class="about">
+		<div class="container"> 
+			<div class="about-w3ls-row"> 
+				<div class="col-md-5 about-left">
+					<img src="https://farm5.staticflickr.com/4560/37852645945_9e4ddabce4_z.jpg" class="img-thumbnail" alt=""/>
+				</div>
+				<div class="col-md-7 about-right"> 
+					<div class="about-agile-row">
+						<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+							<ul id="myTab" class=" nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><small>IRO</small></a></li>
+								<li role="presentation"><a href="#carl" role="tab" id="carl-tab" data-toggle="tab" aria-controls="carl"><small>YOUTH</small></a></li>
+								<li role="presentation"><a href="#girls" role="tab" id="girls-tab" data-toggle="tab" aria-controls="carl"><small>GIRLS</small></a></li>
+								<li role="presentation"><a href="#poverty" role="tab" id="poverty-tab" data-toggle="tab" aria-controls="carl"><small>POVERTY</small></a></li>
+								<li role="presentation"><a href="#climate" role="tab" id="climate-tab" data-toggle="tab" aria-controls="carl"><small>CLIMATE</small></a></li>
+							</ul> 
+							<div class="clearfix"> </div>
+							<div id="myTabContent" class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+									<div class="tabcontent-grids">
+										<p>Igire Programs</p>
+										<ul>
+											<li><i class="fa fa-check-square-o"></i> Education promotion</li>
+											<li><i class="fa fa-check-square-o"></i> 
+											Youth empowerment </li>
+											<li><i class="fa fa-check-square-o"></i>
+											Girls education promotion </li>
+											<li><i class="fa fa-check-square-o"></i>
+											Human Rights Empowerment</li> 
+											<li><i class="fa fa-check-square-o"></i>
+											Climate change promotion</li>
+											<li><i class="fa fa-check-square-o"></i>
+											Women empowerment</li>
+											<li><i class="fa fa-check-square-o"></i>
+											 Children’s rights awareness</li>
+										</ul>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="carl" aria-labelledby="carl-tab">
+									<div class="tabcontent-grids">
+										<p>Our goal is to work with youth to support the global goals by supporting and encouraging them to be the foundation for ending poverty in all its manifestations by 2030. We are also committed to ensuring social protection for the poor and vulnerable, increase access to basic services and support people harmed by climate-related extreme events and other economic, social and environmental shocks and disasters</p>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="girls" aria-labelledby="girls-tab">
+									<div class="tabcontent-grids">
+										<p>
+											Gender equality and women’s empowerment have advanced in recent decades. Girls’ access to education has improved, the rate of child marriage declined and progress was made in the area of sexual and reproductive health and reproductive rights, including fewer maternal deaths. Nevertheless, gender equality remains a persistent challenge for countries worldwide and the lack of such equality is a major obstacle to sustainable development.
+										</p>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="poverty" aria-labelledby="poverty-tab">
+									<div class="tabcontent-grids">
+										<p>
+											Our goal is to work with youth to end poverty in all its manifestations by 2030. We also aim to ensure social protection for the poor and vulnerable, increase access to basic services and support people harmed by climate-related extreme events and other economic, social and environmental shocks and disasters.
+										</p>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="climate" aria-labelledby="climate-tab">
+									<div class="tabcontent-grids">
+										<p>
+											Climate change presents a single biggest threat to development, and its widespread, unprecedented impacts disproportionately burden the poorest and most vulnerable. Urgent action to combat climate change and minimize its disruptions is integral to the successful implementation of the Sustainable Development Goals.
+										</p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<div class="clearfix"> </div> 
 			</div>
 		</div>
 	</div>
-</section>
+	<!-- //about -->
+	<!-- services -->
+	<div class="the-project">
+		<div class="services agileits-bar"> 
+			<div class="container ">	 
+				<h3 class="w3agileits-title">Our Projects</h3> 
+				 <div class="row">
+	                    <!-- Latest Products -->
+	                    <div class="col-sm-4 sm-margin-b-50">
+	                        <div class="margin-b-20">
+	                            <img class="img-thumbnail project-image" src="http://res.cloudinary.com/nexpals/image/upload/v1517048170/she_npvykk.png" alt="Latest Products Image">
+	                        </div>
+	                        <h4><a href="#">SheCan Code</a></h4>
+	                        <p>The SheCanCode Program is a coding boot camp program designed to help girls navigate their career path in tech. The program designed to help girls who completed high school to learn programming skills and pursue their career interest in tech companies.<span class="project-descr">It is designed to teach young girls programming skills and design thinking skills to build their careers as computer programmers and tech entrepreneurs. Participants will learn programming languages such as CSS, HTML, and JavaScript to prepare them to become front-end engineers. Our goal is to teach 300 girls by December 2018.</span></p>
+	                        <a class="link" onclick="readMore()" class="read-more">Read More</a>
+	                    </div>
+	                    <!-- End Latest Products -->
 
+	                    <!-- Latest Products -->
+	                    <div class="col-sm-4 sm-margin-b-50">
+	                        <div class="margin-b-20">
+	                            <img class="img-thumbnail project-image" src="http://res.cloudinary.com/nexpals/image/upload/v1517048122/f_yo6oko.png" alt="Latest Products Image">
+	                        </div>
+	                        <h4><a href="#">Kufundisha Rwanda fellowship</a> <span class="text-uppercase margin-l-20">(KRF)</span></h4>
+	                        <p>Kufundisha Rwanda Fellowship is six months fellowship program driven by Rwandan youth to expand educational opportunities to all children in Rwanda. <span class="project-descr">The organization will recruit promising university graduates from varied disciplines who are passionate to be our future leaders, to teach in underserved communities and schools in six months fellowship.</span></p>
+	                        <a class="link" onclick="readMore()">Read More</a>
+	                    </div>
+	                    <!-- End Latest Products -->
 
-
-<!-- menu js -->
-<script>
-	$('.toggle').on('click', function() {
-		$('.menu').toggleClass('open');
-		$('.w3nav').toggleClass('show-w3nav');
-		$('.w3nav a').toggleClass('show-w3nav-link');
-		$('.toggle').toggleClass('close');
-		$('.header-icon').toggle(800);
-	});
-
-	function readMore(){
-		$('.project-descr').toggle(250);
-	}
-</script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){
-			event.preventDefault();
-
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+	                    <!-- Latest Products -->
+	                    <div class="col-sm-4 sm-margin-b-50">
+	                        <div class="margin-b-20">
+	                            <img class="img-thumbnail project-image" src="http://res.cloudinary.com/nexpals/image/upload/v1517048096/image002_batgcn.png" alt="Latest Products Image">
+	                        </div>
+	                        <h4><a href="#">Solar Mobile</a> <span class="text-uppercase margin-l-20">ICT Hub</span></h4>
+	                        <p>t is a project which is designed to improve the quality of education in the nation by teaching computer literacy in rural areas. With this solar mobile ICT hub, we will be able to reach to the students in rural areas with computer skills.<span class="project-descr">While the infrastructure in rural areas is not developed, with solar mobile ICT hub, we will be able to make computer skills accessible and affordable for every child in rural areas.</span></p>
+	                        <a class="link" onclick="readMore()">Read More</a>
+	                    </div>
+	                    <!-- End Latest Products -->
+	                </div>	
+			 	<div class="row">
+		            <!-- Latest Products -->
+		            <div class="col-sm-4 sm-margin-b-50 col-sm-offset-4">
+		                <div class="margin-b-20">
+		                    <img class="img-thumbnail project-image" src="http://res.cloudinary.com/nexpals/image/upload/v1517048109/1_hV1efNLnTZVgGgaOyLdGhw_xnpkki.png" alt="Latest Products Image">
+		                </div>
+		                <h4><a href="#">Hack Your Opportunity</a></h4>
+		                <p>It is a project designed to train refugee to become software developers. This project is designed to train talented refugee who have or have no background in coding to become software developers.<span class="project-descr">Our mission is to empower our students and help them get job opportunities in developing software. </span></p>
+		                <a class="link" onclick="readMore()" class="read-more">Read More</a>
+		            </div>
+		        </div>
+			</div>	 			
+		</div>				
+	</div>
+	
+	<!-- //services -->
+	<!-- team -->
+	
+	<!-- //team -->   
+	<!-- menu js -->
+	<script>
+		$('.toggle').on('click', function() {
+			$('.menu').toggleClass('open');  
+			$('.w3nav').toggleClass('show-w3nav');  
+			$('.w3nav a').toggleClass('show-w3nav-link');  
+			$('.toggle').toggleClass('close');
+			$('.header-icon').toggle(800);  
 		});
-	});
-</script>
-<!-- //end-smooth-scrolling -->
-<!-- smooth-scrolling-of-move-up -->
-<script type="text/javascript">
-	$(document).ready(function() {
-		/*
-		var defaults = {
-		containerID: 'toTop', // fading element id
-		containerHoverID: 'toTopHover', // fading element hover id
-		scrollSpeed: 1200,
-		easingType: 'linear'
-	};
-	*/
 
-	$().UItoTop({ easingType: 'easeOutQuart' });
-
-});
-</script>
+		function readMore(){
+			$('.project-descr').toggle(250);
+		}
+	</script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
 </body>
 </html>
