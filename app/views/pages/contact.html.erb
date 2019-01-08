@@ -1,139 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0" style>
+<body>
 	<!-- banner -->
-	<header>
-		<!-- navigation -->
-		<div class="main-top py-1 aos-init aos-animate" data-aos="fade-down">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container-fluid">
-					<!-- logo -->
-					<%= link_to image_tag("/assets/igire.png",  alt: "igire", class: "img-fluid", id: "logo"), index_path, class: "navbar-brand font-weight-bold" %>
-					<!-- //logo -->
-					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="navbar-collapse text-center collapse" id="navbarSupportedContent" style="">
-						<ul class="navbar-nav ml-lg-auto">
-							<li class="nav-item active">
-								<%= link_to "Home", index_path, class: "nav-link text-uppercase"%>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									About Us
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
-									<%= link_to "Our Organization", about_path, class: "dropdown-item text-uppercase list-group-item"  %>
-									<%= link_to "Our Team", team_path, class: "dropdown-item text-uppercase list-group-item"  %>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Programs
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
-									<%= link_to "SheCanCode", shecancode_path, class: "dropdown-item text-uppercase list-group-item"  %>
-									<!-- <a class="dropdown-item text-uppercase list-group-item" href="#stats">Girls in ICT</a>
-									<a class="dropdown-item text-uppercase  list-group-item" href="#">Kufandisha Rwanda Fellowship</a> -->
-								</div>
-							</li>
-							<li class="nav-item">
-								<%= link_to "Contact Us", contact_path, class: "nav-link text-uppercase"  %>
-							</li>
-							<li class="nav-item ml-lg-5 mt-lg-0 mt-sm-5 mt-4">
-								<a href="#" class="reqe-button text-uppercase">Donate</a>
-							</li>
+	<div class="banner w3about">
+		<!-- header -->
+		<div class="header">
+			<div class="container">
+				<div class="header-w3lsrow"> 
+					<div class="menu"> 
+						<div class="toggle"></div> 
+						<ul class="w3nav">
+							<li><a href="index.html"> Home</a></li>
+							<li><a href="about.html"> About</a></li> 
+							<li><a href="gallery.html"> Gallery</a></li>
+							<li><a href="contact.html" class="active"> Contact Us</a></li>
+							<li><a href="team.html">Our Team</a></li>
 						</ul>
+						<div class="clearfix"> </div>
+					</div> 
+					<div class="logo">
+						<h1><a href="index.html">IGIRE</a></h1>
+					</div>  
+					<div class="header-right">   
+						<ul class="hidden-xs header-icon">
+							<li><a href="https://web.facebook.com/igirerwandaorganization/" target="_blank"><i class="fa fa-facebook"> </i><span>Facebook</span></a></li>
+							<li><a href="https://twitter.com/igirerwandaorg" target="_blank"><i class="fa fa-twitter"> </i><span>Twitter</span></a></li>
+							<li><a href="#" target="_blank"><i class="fa fa-linkedin"> </i><span>LinkedIn</span></a></li>
+						</ul>
+						<div class="clearfix"> </div> 
 					</div>
+					<div class="clearfix"> </div>
 				</div>
-			</nav>
+			</div>
 		</div>
-		<!-- //navigation -->
-	</header>
-	<!-- //header -->
-	<div class="pages">
+		<!-- //header --> 
+		<!-- banner-text -->
+		<div class="banner-text"> 
+			<div class="container"> 
+				<div class="banner-w3lstext">
+					<h2>Contact</h2>
+				</div> 	 
+			</div>
+		</div>
+		<!-- //banner-text --> 
 	</div>
 	<!-- //banner -->
-
-	<section class="contact py-5" id="contact">
-		<div class="container py-xl-5 py-lg-3">
-			<!-- map -->
-			<div class="col-lg-12 map aos-init aos-animate" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-				<iframe  src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRaq3WRen3BkRhXzRmqJQ3iw&key=AIzaSyCXJoXjURY8_KXLfPJuZfS1l1SsgubR-WI" allowfullscreen = "True"></iframe>
-			</div>
-			<!-- //map -->
-		</div>
-
-
-		<!-- contact -->
-		<div class="container py-xl-5 py-lg-3">
-			<div class="row mb-lg-4">
-				<div class="col-lg-6 aboutright mt-xl-0 mt-lg-5 aos-init aos-animate" data-aos="fade-up">
-					<h3 class="tittle text-dark font-weight-bold">Get Involved</h3>
-					<p>Interested in learning more about us or getting involved? Send us an email and we'll get back to you as soon as we can!</p>
-					<div class="main_grid_contact contact-form">
-						<form action="#" method="post">
-							<div class="form-group">
-								<input class="form-control" type="text" name="Name" placeholder="Name" required="">
-							</div>
-							<div class="form-group">
-								<input class="form-control" type="email" name="Email" placeholder="Email" required="">
-							</div>
-							<div class="form-group">
-								<textarea id="textarea" name="message" placeholder="Message" required=""></textarea>
-							</div>
-							<div class="input-group1">
-								<input class="form-control" type="submit" value="Submit">
-							</div>
-						</form>
+	<!-- contact -->
+	<div class="map">
+		<iframe width="450" height="250" frameborder="0" style="border:10px"
+		src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRaq3WRen3BkRhXzRmqJQ3iw&key=AIzaSyCXJoXjURY8_KXLfPJuZfS1l1SsgubR-WI" allowfullscreen></iframe> 
+	</div>
+	<div class="contact">
+		<div class="container">
+			<h3 class="w3agileits-title">Get Involved</h3> 
+			<div class="contact-info">	
+				<div class="col-md-4 contact-grids">
+					<div class="cnt-address">
+						<h3 class="title1">Address</h3> 
+						<p>KG 11 Av 183.
+							<span>Kimironko</span>
+							Kigali, Rwanda
+						</p> 
+						<p>Telephone: +250785668160
+							<span>FAX: +1 234 567 9871</span>
+							E-mail: <a href="#">info@igirerwanda.org</a>
+						</p>
 					</div>
 				</div>
-				<div class="col-lg-5 aboutleft ml-xl-4 mt-lg-3 mt-4 aos-init aos-animate" data-aos="fade-up">
-					<h3 class="tittle text-dark font-weight-bold mb-4">Stay Connected</h3>
-					<p>Follow us on social media to stay updated on the latest IRO news!</p>
-					<a class="twitter-timeline" data-height="300" href="https://twitter.com/igirerwandaorg?ref_src=twsrc%5Etfw">Tweets by igirerwandaorg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-				</div>
+				<div class="col-md-8 contact-grids">
+					<h5>Donation.</h5>
+					<p>Like other organizations, Igire Rwanda Organization depends on generous donations and sponsorship of individuals, companies and donors. To make donation, please Send email to <a href="#">donate@igire-rwanda.org</a>  and we will get back to you as soon as possible.	
+					<div class="contact-form">  
+						<form action="#" method="post">
+							<textarea name="Message" placeholder="Message" required=""></textarea>
+							<input type="text" name="First Name" placeholder="Name" required="">
+							<input type="text" name="Email" placeholder="Email" required=""> 
+							<input type="submit" value="SUBMIT">
+						</form> 
+					</div>
+				</div> 
+				<div class="clearfix"> </div>
 			</div>
-		</section>
-		<!-- //contact -->
-		<!-- menu js -->
-		<script>
-			$('.toggle').on('click', function() {
-				$('.menu').toggleClass('open');
-				$('.w3nav').toggleClass('show-w3nav');
-				$('.w3nav a').toggleClass('show-w3nav-link');
-				$('.toggle').toggleClass('close');
-				$('.header-icon').toggle(800);
-			});
-		</script>
-		<!-- //menu js -->
-		<!-- start-smooth-scrolling -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
+		</div>
+	</div> 
+	<!-- //contact --> 
+	<!-- menu js -->
+	<script>
+		$('.toggle').on('click', function() {
+			$('.menu').toggleClass('open');  
+			$('.w3nav').toggleClass('show-w3nav');  
+			$('.w3nav a').toggleClass('show-w3nav-link');  
+			$('.toggle').toggleClass('close');
+			$('.header-icon').toggle(800);  
+		});
+	</script>
+	<!-- //menu js -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
 			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){
+				$(".scroll").click(function(event){		
 					event.preventDefault();
-
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 				});
 			});
-		</script>
-		<!-- //end-smooth-scrolling -->
-		<!-- smooth-scrolling-of-move-up -->
-		<script type="text/javascript">
-			$(document).ready(function() {
-				/*
-				var defaults = {
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear'
+				easingType: 'linear' 
 			};
 			*/
-
+			
 			$().UItoTop({ easingType: 'easeOutQuart' });
-
+			
 		});
 	</script>
 </body>

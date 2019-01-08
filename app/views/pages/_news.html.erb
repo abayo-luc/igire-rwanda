@@ -18,9 +18,25 @@
                             </div>
                             <div class="carousel-desc">
                                 <h2>Igire Rwanda Organization</h2>
-                                <p style="color: #000">Igire Rwanda organization in partnership with American Conner Kigali is providing 3 months scholarships for 25 girls who are extremely interested to pursue their career in tech industry. Girls will be tough advanced programing languages such as HTML, JAVASCRIPT AND CSS to help them to become font end engineers. Students are responsible to have their own laptops. The scholarships covers all learning cost.</p>
+                                <p style="color: #000">gire Rwanda organization in partnership with American Conner Kigali is providing 3 months scholarships for 25 girls who are extremely interested to pursue their career in tech industry. Girls will be tough advanced programing languages such as HTML, JAVASCRIPT AND CSS to help them to become font end engineers. Students are responsible to have their own laptops. The scholarships covers all learning cost.</p> 
                                 <br>
-                                <b style="color: #000">NB.</b> <p style="color: #000"> Read careful the application form to see if you meet all the requirements </p>
+                                <b style="color: #000">NB.</b> <p style="color: #000"> Read careful the application form to see if you meet all the requirements </p>
+                                <div class="wrap myWrap">
+                                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6dkdOcAfJToBCT7y-mnQwMi5aTmOIkMM3ZN93v7CHnsR30A/viewform?c=0&w=1" class="button2" target="blanck">Apply Now!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item item2">
+                    <div class="fill" style="background-color:rgb(255, 102, 153)">
+                        <div class="inner-content">
+                            <div class="carousel-img">
+                                <img src="https://farm5.staticflickr.com/4547/38668196006_75a6c97cf7_b.jpg" alt="white-sofa" class="img img-responsive" />
+                            </div>
+                            <div class="carousel-desc">
+                                <h2>In Paterneship American Corner Kigali</h2>
+                                <p>Igire Rwanda Organization partner with American Conner Kigali to support students with access to the internet and space plus other learning materials. This program is expected to be continuous project and to reach to other parts of the country to encourage girls to entre in tech industry.</p>
                                 <div class="wrap myWrap">
                                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6dkdOcAfJToBCT7y-mnQwMi5aTmOIkMM3ZN93v7CHnsR30A/viewform?c=0&w=1" class="button2" target="blanck">Apply Now!</a>
                                 </div>
@@ -41,11 +57,11 @@
                             <div class="col-md-6 text-left">
                                 <div class="carousel-desc">
                                     <h2>SheCanCode</h2>
-                                    <p>SheCanCode Program is a three month coding boot camp program designed to help girls navigate their career path in tech. The program is designed to help girls who completed high school to learn programing skills and pursue their career of interest in tech companies.</p>
+                                    <p>SheCanCode Program is a three month coding boot camp program designed to help girls navigate their career path in tech. The program designed to help girls who completed high school to learn programing skills and pursue their career of interest in tech companies.</p>
                                 </div>
                                 <div class="wrap myWrap">
-                                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6dkdOcAfJToBCT7y-mnQwMi5aTmOIkMM3ZN93v7CHnsR30A/viewform?c=0&w=1" class="button2" target="_blank">Apply Now!</a>
-                                </div>
+                                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6dkdOcAfJToBCT7y-mnQwMi5aTmOIkMM3ZN93v7CHnsR30A/viewform?c=0&w=1" class="button2" target="blanck">Apply Now!</a>
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -61,23 +77,28 @@
         $('#myCarousel').carousel({
           interval:6000
         });
-    // scroll slides on mouse scroll
+
+    // scroll slides on mouse scroll 
     $('#myCarousel').bind('mousewheel DOMMouseScroll', function(e){
+
             if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
                 $(this).carousel('prev');
-
-
+                
+                
             }
             else{
                 $(this).carousel('next');
-
+                
             }
         });
-    //scroll slides on swipe for touch enabled devices
-        $("#myCarousel").on("touchstart", function(event){
 
+    //scroll slides on swipe for touch enabled devices 
+
+        $("#myCarousel").on("touchstart", function(event){
+     
             var yClick = event.originalEvent.touches[0].pageY;
             $(this).one("touchmove", function(event){
+
             var yMove = event.originalEvent.touches[0].pageY;
             if( Math.floor(yClick - yMove) > 1 ){
                 $(".carousel").carousel('next');
@@ -90,11 +111,12 @@
                 $(this).off("touchmove");
         });
     });
-
+        
     });
     //animated  carousel start
     $(document).ready(function(){
-    //to add  start animation on load for first slide
+
+    //to add  start animation on load for first slide 
     $(function(){
             $.fn.extend({
                 animateCss: function (animationName) {
@@ -107,11 +129,13 @@
                  $('.item1.active img').animateCss('slideInDown');
                  $('.item1.active h2').animateCss('zoomIn');
                  $('.item1.active p').animateCss('fadeIn');
-
+                 
     });
-
+        
     //to start animation on  mousescroll , click and swipe
 
+
+     
          $("#myCarousel").on('slide.bs.carousel', function () {
             $.fn.extend({
                 animateCss: function (animationName) {
@@ -121,16 +145,17 @@
                     });
                 }
             });
-
+        
     // add animation type  from animate.css on the element which you want to animate
+
             $('.item1 img').animateCss('slideInDown');
             $('.item1 h2').animateCss('zoomIn');
             $('.item1 p').animateCss('fadeIn');
-
+            
             $('.item2 img').animateCss('zoomIn');
             $('.item2 h2').animateCss('swing');
             $('.item2 p').animateCss('fadeIn');
-
+            
             $('.item3 img').animateCss('fadeInLeft');
             $('.item3 h2').animateCss('fadeInDown');
             $('.item3 p').animateCss('fadeIn');
